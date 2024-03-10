@@ -187,42 +187,6 @@
       ]
     },
     {
-      "key": "bttcj.com",
-      "name": "成人04",
-      "type": 0,
-      "api": "http://bttcj.com/inc/sapi.php",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "wmcj8.com",
-      "name": "成人07",
-      "type": 0,
-      "api": "http://wmcj8.com/inc/sapi.php",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "dadiapi.com",
-      "name": "成人09",
-      "type": 0,
-      "api": "http://dadiapi.com/api.php",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "llzxcj.com",
-      "name": "成人15",
-      "type": 0,
-      "api": "http://llzxcj.com/inc/sck.php?ac=videolist",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "f2dcj6.com",
       "name": "成人18",
       "type": 0,
