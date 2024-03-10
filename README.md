@@ -21,5 +21,5 @@ https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/
 ```
 > 直接使用接口
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index.json
 ```
