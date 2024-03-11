@@ -11,6 +11,7 @@ import com.github.catvod.R;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.spider.Cg51;
 import com.github.catvod.spider.Douban;
+import com.github.catvod.spider.Ikanbot;
 import com.github.catvod.spider.Init;
 import com.github.catvod.spider.J91;
 import com.github.catvod.spider.Jable;
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new QxiTv();
+            spider = new Ikanbot();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -82,7 +83,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("/vodtype/1.html", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("movie-热门-p-", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -90,7 +91,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("798347")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("841924")));
         } catch (Throwable e) {
             e.printStackTrace();
         }

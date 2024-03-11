@@ -148,6 +148,14 @@
       "filterable": 1
     },
     {
+      "key": "Ikanbot",
+      "name": "Ikanbot",
+      "type": 3,
+      "api": "csp_Ikanbot",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "J91",
       "name": "J91",
       "type": 3,
