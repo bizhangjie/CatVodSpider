@@ -53,7 +53,7 @@ public class Ikanbot extends Spider {
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
-        String[] typeIdList = {"movie-热门-p-", "tv-热门-p-"};
+        String[] typeIdList = {"movie-热门", "tv-热门"};
         String[] typeNameList = {"热门电影", "热门剧集"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
@@ -76,8 +76,11 @@ public class Ikanbot extends Spider {
 
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
-        String target = cateUrl + tid + pg + ".html";
-        Document doc = Jsoup.parse(OkHttp.string(target, getHeaders()));
+        String target = cateUrl + tid;
+        if (pg != "1"){
+            target = target + "-p-" + pg;
+        }
+        Document doc = Jsoup.parse(OkHttp.string(target.concat(".html"), getHeaders()));
         List<Vod> list = parseVods(doc);
         Integer total = (Integer.parseInt(pg) + 1) * 20;
         return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
@@ -118,10 +121,10 @@ public class Ikanbot extends Spider {
             } else {
                 PlayFrom = PlayFrom + flag;
             }
-            if (!"".equals(liUrl)) {
-                PlayUrl = PlayUrl + "$$$" + liUrl;
+            if (!"".equals(PlayUrl)) {
+                PlayUrl = PlayUrl + "$$$" + liUrl.replace("$" + flag,"");
             } else {
-                PlayUrl = PlayUrl + liUrl;
+                PlayUrl = PlayUrl + liUrl.replace("$" + flag,"");
             }
 
 //            PlayUrl += String.valueOf(element.getAsJsonObject().get("resData")).replace("\\","").replace("\\\"","\"");
@@ -132,7 +135,7 @@ public class Ikanbot extends Spider {
         vod.setVodYear(year);
         vod.setVodName(name);
         vod.setVodPlayFrom(PlayFrom);
-        vod.setVodPlayUrl(PlayUrl);
+        vod.setVodPlayUrl(PlayUrl.replace("##","#").replace("#$$$","$$$"));
         return Result.string(vod);
     }
 
