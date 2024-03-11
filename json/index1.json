@@ -17,7 +17,7 @@
     {
       "key": "QQ",
       "name": "QQ",
-      "type": 3,
+      "type": 4,
       "api": "csp_QQ",
       "searchable": 1,
       "filterable": 1
@@ -25,7 +25,7 @@
     {
       "key": "IQIYI",
       "name": "IQIYI",
-      "type": 3,
+      "type": 4,
       "api": "csp_IQIYI",
       "searchable": 1,
       "filterable": 1
@@ -33,7 +33,7 @@
     {
       "key": "MGTV",
       "name": "MGTV",
-      "type": 3,
+      "type": 4,
       "api": "csp_MGTV",
       "searchable": 1,
       "filterable": 1
@@ -55,6 +55,11 @@
       "name": "Json轮询",
       "type": 2,
       "url": "Sequence"
+    },
+    {
+      "name": "解析",
+      "type": 4,
+      "url": "http://119.91.123.253:2345/Api/yun.php?url="
     },
     {
       "name": "魏晓芳",
