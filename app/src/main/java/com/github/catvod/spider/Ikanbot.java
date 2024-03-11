@@ -53,7 +53,7 @@ public class Ikanbot extends Spider {
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
-        String[] typeIdList = {"movie-热门", "tv-热门"};
+        String[] typeIdList = {"movie", "tv"};
         String[] typeNameList = {"热门电影", "热门剧集"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
@@ -76,7 +76,7 @@ public class Ikanbot extends Spider {
 
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
-        String target = cateUrl + tid;
+        String target = cateUrl + tid + "-热门";
         if (pg != "1"){
             target = target + "-p-" + pg;
         }
@@ -91,7 +91,10 @@ public class Ikanbot extends Spider {
         Document doc = Jsoup.parse(OkHttp.string(detailUrl.concat(ids.get(0)), getHeaders()));
         String name = doc.select("h1").text();
         String pic = doc.select("meta[property=og:image]").attr("content");
-        String year = doc.select("div.detail > h3").get(0).text();
+        Elements desc = doc.select("div.detail > h3");
+        String year = desc.get(1).text();
+        String area = desc.get(2).text();
+        String actor = desc.get(3).text();
 
         String current_id = doc.select("input#current_id").attr("value");
         String e_token = doc.select("input#e_token").attr("value");
@@ -133,6 +136,8 @@ public class Ikanbot extends Spider {
         vod.setVodId(ids.get(0));
         vod.setVodPic(pic);
         vod.setVodYear(year);
+        vod.setVodActor(actor);
+        vod.setVodArea(area);
         vod.setVodName(name);
         vod.setVodPlayFrom(PlayFrom);
         vod.setVodPlayUrl(PlayUrl.replace("##","#").replace("#$$$","$$$"));

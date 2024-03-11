@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("tv-热门", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("movie", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
