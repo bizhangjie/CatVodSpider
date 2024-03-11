@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("movie-热门-p-", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("tv-热门-p-", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("841924")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("833375")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
