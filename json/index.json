@@ -45,6 +45,14 @@
       "api": "csp_Ikanbot",
       "searchable": 1,
       "filterable": 1
+    },,
+    {
+      "key": "W55Movie",
+      "name": "W55Movie",
+      "type": 3,
+      "api": "csp_W55Movie",
+      "searchable": 0,
+      "filterable": 1
     },
     {
       "key": "J91",

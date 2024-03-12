@@ -18,6 +18,7 @@ import com.github.catvod.spider.Jable;
 import com.github.catvod.spider.JavDb;
 import com.github.catvod.spider.JustLive;
 import com.github.catvod.spider.QxiTv;
+import com.github.catvod.spider.W55Movie;
 import com.github.catvod.spider.Wogg;
 import com.github.catvod.spider.Zhaozy;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -58,7 +59,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new Ikanbot();
+            spider = new W55Movie();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -83,7 +84,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("movie", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("/vodshow/124", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -91,7 +92,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("838500")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("454873.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -99,7 +100,7 @@ public class MainActivity extends Activity {
 
     public void playerContent() {
         try {
-            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "/vodplay/798347-2-9.html", new ArrayList<>()));
+            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "454873-5-5.html", new ArrayList<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }

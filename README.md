@@ -17,6 +17,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | Jabel  | 教学     | csp_Jable | 🟢       |
 | 7xiTv  | 视频     | csp_QxiTv | 🟢       |
 | Ikanbot  | 视频     | csp_Ikanbot | 🟢       |
+| W55Movie  | 视频     | csp_W55Movie | 🟢       |
 
 > jar脚本
 ```shell
