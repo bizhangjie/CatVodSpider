@@ -31,3 +31,8 @@ https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/
 ```shell
 https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
 ```
+
+> 第三方
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/TVBOX盒子.txt
+```
