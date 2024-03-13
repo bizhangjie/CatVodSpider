@@ -172,14 +172,14 @@ public class CaoLiu extends Spider {
         String target = cateUrl + tid + "&page=" + pg;
         Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
         // 只有图片模版
-        if (tid == "57") {
+        if ("57".equals(tid)) {
             List<Vod> list = parseHtml(doc);
             Integer total = (Integer.parseInt(pg) + 1) * 20;
             return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
         }
         List<Vod> list = new ArrayList<>();
         // 图文结合模版
-        if (tid == "47") {
+        if ("47".equals(tid)) {
             for (Element element : doc.select("div.url_linkkarl")) {
                 String pic = element.select("img").attr("data-aes");
                 String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];

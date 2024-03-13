@@ -98,7 +98,7 @@ public class MiMei extends Spider {
         Document doc = Jsoup.parse(OkHttp.string(target, getHeaders()));
 
         List<Vod> list;
-        if (tid == "/suoyoushipin/zhibo"){
+        if ("/suoyoushipin/zhibo".equals(tid)){
             list = parseHtmlZB(doc);
         }else {
             list = parseHtml(doc);
