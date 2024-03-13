@@ -71,6 +71,14 @@
       "filterable": 1
     },
     {
+      "key": "XVideos",
+      "name": "XVideos",
+      "type": 3,
+      "api": "csp_XVideos",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "push_agent",
       "name": "推送",
       "type": 3,

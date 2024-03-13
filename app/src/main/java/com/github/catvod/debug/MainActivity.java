@@ -20,6 +20,7 @@ import com.github.catvod.spider.JustLive;
 import com.github.catvod.spider.QxiTv;
 import com.github.catvod.spider.W55Movie;
 import com.github.catvod.spider.Wogg;
+import com.github.catvod.spider.XVideos;
 import com.github.catvod.spider.Zhaozy;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
@@ -59,7 +60,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new W55Movie();
+            spider = new XVideos();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -84,7 +85,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("/vodshow/124", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -92,7 +93,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("454873.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("/video79810059/_")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
