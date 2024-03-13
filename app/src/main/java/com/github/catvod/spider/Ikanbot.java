@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
 public class Ikanbot extends Spider {
 
     private static final String siteUrl = "https://v.ikanbot.com";
-    private static final String cateUrl = siteUrl + "/hot/index-";
+    private static final String cateUrl = siteUrl + "/hot";
     private static final String detailUrl = siteUrl + "/play/";
     private static final String searchUrl = siteUrl + "/search?q=";
 
@@ -53,7 +53,7 @@ public class Ikanbot extends Spider {
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
-        String[] typeIdList = {"movie", "tv"};
+        String[] typeIdList = {"/index-movie", "/index-tv"};
         String[] typeNameList = {"热门电影", "热门剧集"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));

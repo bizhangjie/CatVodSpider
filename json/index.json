@@ -32,7 +32,7 @@
     },
     {
       "key": "QxiTv",
-      "name": "7xiTv",
+      "name": "7喜影视",
       "type": 3,
       "api": "csp_QxiTv",
       "searchable": 1,
@@ -48,7 +48,7 @@
     },
     {
       "key": "W55Movie",
-      "name": "W55Movie",
+      "name": "555电影",
       "type": 3,
       "api": "csp_W55Movie",
       "searchable": 0,
@@ -56,7 +56,7 @@
     },
     {
       "key": "J91",
-      "name": "J91",
+      "name": "91",
       "type": 3,
       "api": "csp_J91",
       "searchable": 1,
@@ -64,7 +64,7 @@
     },
     {
       "key": "Cg51",
-      "name": "Cg51",
+      "name": "51吃瓜",
       "type": 3,
       "api": "csp_Cg51",
       "searchable": 1,
@@ -80,7 +80,7 @@
     },
     {
       "key": "MiMei",
-      "name": "MiMei",
+      "name": "迷妹",
       "type": 3,
       "api": "csp_MiMei",
       "searchable": 1,
@@ -88,7 +88,7 @@
     },
     {
       "key": "CaoLiu",
-      "name": "CaoLiu",
+      "name": "小草",
       "type": 3,
       "api": "csp_CaoLiu",
       "searchable": 0,

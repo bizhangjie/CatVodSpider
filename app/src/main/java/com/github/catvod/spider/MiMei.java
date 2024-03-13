@@ -53,6 +53,22 @@ public class MiMei extends Spider {
         return list;
     }
 
+    public List<Vod> parseHtmlZB(Document document) {
+        List<Vod> list = new ArrayList<>();
+        for (Element element : document.select("#zhibo")) {
+            try {
+                String pic = element.select("img").attr("src");
+                String id = element.select("a").attr("href");
+                String name = element.select("a").attr("title");
+                if (!"".equals(name)) {
+                    list.add(new Vod(id, name, pic));
+                }
+            } catch (Exception e) {
+            }
+        }
+        return list;
+    }
+
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
@@ -75,12 +91,18 @@ public class MiMei extends Spider {
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid;
         if (pg == "1"){
-            target = target + "/";
+            target = target ;
         }else {
             target = target + "/index_" + pg + ".html";
         }
         Document doc = Jsoup.parse(OkHttp.string(target, getHeaders()));
-        List<Vod> list = parseHtml(doc);
+
+        List<Vod> list;
+        if (tid == "zhibo"){
+            list = parseHtmlZB(doc);
+        }else {
+            list = parseHtml(doc);
+        }
         Integer total = (Integer.parseInt(pg) + 1) * 20;
         return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
     }

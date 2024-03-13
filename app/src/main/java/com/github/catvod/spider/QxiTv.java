@@ -47,12 +47,14 @@ public class QxiTv extends Spider {
         List<Vod> list = new ArrayList<>();
         List<Class> classes = new ArrayList<>();
         Document doc = Jsoup.parse(OkHttp.string(siteUrl, getHeaders()));
+        int index = 1;
         for (Element element : doc.select("h4.title-h")) {
             String typeId = element.select("a").attr("href");
             String typeName = element.select("span").text();
-            if (!"".equals(typeName)) {
+            if (!"".equals(typeName) && index != 1 && index != 6) {
                 classes.add(new Class(typeId, typeName.replace(" 查看更多","")));
             }
+            index++;
         }
         for (Element element : doc.select("a.public-list-exp")) {
             try {

@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new MiMei();
+            spider = new Ikanbot();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("guochan", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("/index-movie", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
