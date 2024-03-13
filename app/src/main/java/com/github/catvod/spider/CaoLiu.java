@@ -53,7 +53,7 @@ public class CaoLiu extends Spider {
         return headers;
     }
 
-    private static final int THREAD_POOL_SIZE = 20;
+    private static final int THREAD_POOL_SIZE = 25;
 
     public List<Vod> parseHtml(Document document) {
         List<Vod> list = new ArrayList<>();
@@ -93,47 +93,6 @@ public class CaoLiu extends Spider {
         return list;
     }
 
-    public List<Vod> parseHtml(String siteUrl, String cookie) {
-        List<Vod> list = new ArrayList<>();
-        ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
-        List<Future<Vod>> futures = new ArrayList<>();
-
-        Document doc = Jsoup.parse(OkHttp.string(siteUrl + "/thread.php?fid=47&page=1",getCookie()));
-        Elements elements = doc.select("div.url_linkkarl");
-        for (Element element : elements) {
-            Future<Vod> future = executorService.submit(() -> {
-                try {
-                    String pic = element.select("img").attr("data-aes");
-                    String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
-                    String name = element.select("h2").text();
-                    // 获取图片进行解密
-                    String string = OkHttp.string(pic);
-                    String picView = aesDecrypt(string);
-                    return new Vod(href, name, picView);
-                } catch (Exception e) {
-                    // 处理异常情况
-                    return null;
-                }
-            });
-            futures.add(future);
-        }
-
-        for (Future<Vod> future : futures) {
-            try {
-                Vod vod = future.get();
-                if (vod != null) {
-                    list.add(vod);
-                }
-            } catch (Exception e) {
-                // 处理异常情况
-            }
-        }
-
-        executorService.shutdown();
-        return list;
-    }
-
-
     private static final String IV = "IMGy92137kxhxabI";
     private static final String KEY = "I884417AYxOK0123";
 
@@ -163,7 +122,7 @@ public class CaoLiu extends Spider {
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
-        List<Vod> list = parseHtml(siteUrl,"");
+        List<Vod> list = new ArrayList<>();
         return Result.string(classes, list);
     }
 

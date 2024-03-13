@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new MiMei();
+            spider = new CaoLiu();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
