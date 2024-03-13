@@ -56,10 +56,10 @@ public class CaoLiu extends Spider {
                 String pic = element.select("img").attr("data-aes");
                 String id = element.select("img").attr("alt");
                 // 获取图片进行解密
-//                String string = OkHttp.string(pic);
-//                String picView = aesDecrypt(string);
+                String string = OkHttp.string(pic);
+                String picView = aesDecrypt(string);
                 String name = "看圖片";
-                list.add(new Vod(id, name, pic));
+                list.add(new Vod(id, name, picView));
             } catch (Exception e) {
             }
         }
@@ -92,7 +92,7 @@ public class CaoLiu extends Spider {
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
         String[] typeIdList = {"57", "33", "47", "6", "7", "2", "3", "4", "5", "48"};
-        String[] typeNameList = {"VIP特享影視", "VIP影視專區", "草榴黑料記", "國產原創區", "中字原創區", "亞洲無碼區", "亞洲有碼區", "歐美原創區", "動漫原創區", "ASMR視訊區"};
+        String[] typeNameList = {"特享影視", "影視專區", "草榴黑料記", "國產原創區", "中字原創區", "亞洲無碼區", "亞洲有碼區", "歐美原創區", "動漫原創區", "ASMR視訊區"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
@@ -103,9 +103,9 @@ public class CaoLiu extends Spider {
             String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
             String name = element.select("h2").text();
             // 获取图片进行解密
-//                String string = OkHttp.string(pic);
-//                String picView = aesDecrypt(string);
-            list.add(new Vod(href, name, pic));
+            String string = OkHttp.string(pic);
+            String picView = aesDecrypt(string);
+            list.add(new Vod(href, name, picView));
         }
         return Result.string(classes, list);
     }
@@ -113,10 +113,9 @@ public class CaoLiu extends Spider {
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid + "&page=" + pg;
-        Document doc;
+        Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
         // 只有图片模版
         if (tid == "57") {
-            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             List<Vod> list = parseHtml(doc);
             Integer total = (Integer.parseInt(pg) + 1) * 100;
             return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 100, total, list);
@@ -124,7 +123,6 @@ public class CaoLiu extends Spider {
         List<Vod> list = new ArrayList<>();
         // 图文结合模版
         if (tid == "47") {
-            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             for (Element element : doc.select("div.url_linkkarl")) {
                 String pic = element.select("img").attr("data-aes");
                 String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
@@ -137,7 +135,6 @@ public class CaoLiu extends Spider {
         }
         // 文字列表模版
         else {
-            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             for (Element element : doc.select("td.tal")) {
                 String id = element.select("a").attr("href").replace("read.php?tid=", "").split("&")[0];
                 String name = element.select("a").text();
