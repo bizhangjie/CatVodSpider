@@ -103,12 +103,15 @@ public class CaoLiu extends Spider {
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid + "&page=" + pg;
-        List<Vod> list = new ArrayList<>();
+
         // 只有图片模版
         if (tid == "57") {
-            Document doc = Jsoup.parse(OkHttp.string(target, getHeaders()));
-            list = parseHtml(doc);
+            Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
+            List<Vod> list = parseHtml(doc);
+            Integer total = (Integer.parseInt(pg) + 1) * 20;
+            return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
         }
+        List<Vod> list = new ArrayList<>();
         // 图文结合模版
         if (tid == "47") {
             Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
@@ -131,7 +134,6 @@ public class CaoLiu extends Spider {
                 list.add(new Vod(id, name, ""));
             }
         }
-
         Integer total = (Integer.parseInt(pg) + 1) * 20;
         return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
     }

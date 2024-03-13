@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new CaoLiu();
+            spider = new MiMei();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
 
     public void categoryContent() {
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("6", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("guochan", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("1716500")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("/suoyoushipin/guochan/62824.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
