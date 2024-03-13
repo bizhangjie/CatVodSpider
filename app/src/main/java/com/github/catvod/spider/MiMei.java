@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 public class MiMei extends Spider {
 
     private static final String siteUrl = "https://infmbln.info";
-    private static final String cateUrl = siteUrl + "/suoyoushipin/";
+    private static final String cateUrl = siteUrl;
     private static final String detailUrl = siteUrl;
     private static final String searchUrl = "https://api.3bmmjla.life/Api/getSearch";
 
@@ -75,7 +75,7 @@ public class MiMei extends Spider {
         Document doc = Jsoup.parse(OkHttp.string(siteUrl, getHeaders()));
         for (Element element : doc.select("div.hend").select("li")) {
             try {
-                String typeId = element.select("a").attr("href").split("/")[2];
+                String typeId = element.select("a").attr("href");
                 String typeName = element.select("a").text();
                 classes.add(new Class(typeId, typeName));
             } catch (Exception e) {

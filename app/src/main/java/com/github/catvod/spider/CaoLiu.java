@@ -97,16 +97,26 @@ public class CaoLiu extends Spider {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
         List<Vod> list = new ArrayList<>();
+        Document doc = Jsoup.parse(OkHttp.string(siteUrl + "/thread.php?fid=47&page=1", getCookie()));
+        for (Element element : doc.select("div.url_linkkarl")) {
+            String pic = element.select("img").attr("data-aes");
+            String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
+            String name = element.select("h2").text();
+            // 获取图片进行解密
+//                String string = OkHttp.string(pic);
+//                String picView = aesDecrypt(string);
+            list.add(new Vod(href, name, pic));
+        }
         return Result.string(classes, list);
     }
 
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid + "&page=" + pg;
-
+        Document doc;
         // 只有图片模版
         if (tid == "57") {
-            Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
+            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             List<Vod> list = parseHtml(doc);
             Integer total = (Integer.parseInt(pg) + 1) * 100;
             return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 100, total, list);
@@ -114,7 +124,7 @@ public class CaoLiu extends Spider {
         List<Vod> list = new ArrayList<>();
         // 图文结合模版
         if (tid == "47") {
-            Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
+            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             for (Element element : doc.select("div.url_linkkarl")) {
                 String pic = element.select("img").attr("data-aes");
                 String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
@@ -127,7 +137,7 @@ public class CaoLiu extends Spider {
         }
         // 文字列表模版
         else {
-            Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
+            doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             for (Element element : doc.select("td.tal")) {
                 String id = element.select("a").attr("href").replace("read.php?tid=", "").split("&")[0];
                 String name = element.select("a").text();
