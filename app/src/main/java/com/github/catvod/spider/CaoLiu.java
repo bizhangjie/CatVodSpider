@@ -53,7 +53,7 @@ public class CaoLiu extends Spider {
         return headers;
     }
 
-    private static final int THREAD_POOL_SIZE = 15;
+    private static final int THREAD_POOL_SIZE = 20;
 
     public List<Vod> parseHtml(Document document) {
         List<Vod> list = new ArrayList<>();
