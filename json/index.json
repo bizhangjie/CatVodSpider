@@ -79,6 +79,22 @@
       "filterable": 1
     },
     {
+      "key": "MiMei",
+      "name": "MiMei",
+      "type": 3,
+      "api": "csp_MiMei",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "CaoLiu",
+      "name": "CaoLiu",
+      "type": 3,
+      "api": "csp_CaoLiu",
+      "searchable": 0,
+      "filterable": 1
+    },
+    {
       "key": "push_agent",
       "name": "推送",
       "type": 3,
