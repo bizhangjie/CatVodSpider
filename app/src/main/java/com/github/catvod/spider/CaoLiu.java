@@ -16,11 +16,15 @@ import com.google.gson.JsonObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,20 +53,83 @@ public class CaoLiu extends Spider {
         return headers;
     }
 
+    private static final int THREAD_POOL_SIZE = 15;
+
     public List<Vod> parseHtml(Document document) {
         List<Vod> list = new ArrayList<>();
-        for (Element element : document.select("div.vv-box")) {
+        ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+        List<Future<Vod>> futures = new ArrayList<>();
+
+        Elements elements = document.select("div.vv-box");
+        for (Element element : elements) {
+            Future<Vod> future = executorService.submit(() -> {
+                try {
+                    String pic = element.select("img").attr("data-aes");
+                    String id = element.select("img").attr("alt");
+                    // 获取图片进行解密
+                    String string = OkHttp.string(pic);
+                    String picView = aesDecrypt(string);
+                    String name = "看圖片";
+                    return new Vod(id, name, picView);
+                } catch (Exception e) {
+                    // 处理异常情况
+                    return null;
+                }
+            });
+            futures.add(future);
+        }
+
+        for (Future<Vod> future : futures) {
             try {
-                String pic = element.select("img").attr("data-aes");
-                String id = element.select("img").attr("alt");
-                // 获取图片进行解密
-                String string = OkHttp.string(pic);
-                String picView = aesDecrypt(string);
-                String name = "看圖片";
-                list.add(new Vod(id, name, picView));
+                Vod vod = future.get();
+                if (vod != null) {
+                    list.add(vod);
+                }
             } catch (Exception e) {
+                // 处理异常情况
             }
         }
+        executorService.shutdown();
+        return list;
+    }
+
+    public List<Vod> parseHtml(String siteUrl, String cookie) {
+        List<Vod> list = new ArrayList<>();
+        ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+        List<Future<Vod>> futures = new ArrayList<>();
+
+        Document doc = Jsoup.parse(OkHttp.string(siteUrl + "/thread.php?fid=47&page=1",getCookie()));
+        Elements elements = doc.select("div.url_linkkarl");
+        for (Element element : elements) {
+            Future<Vod> future = executorService.submit(() -> {
+                try {
+                    String pic = element.select("img").attr("data-aes");
+                    String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
+                    String name = element.select("h2").text();
+                    // 获取图片进行解密
+                    String string = OkHttp.string(pic);
+                    String picView = aesDecrypt(string);
+                    return new Vod(href, name, picView);
+                } catch (Exception e) {
+                    // 处理异常情况
+                    return null;
+                }
+            });
+            futures.add(future);
+        }
+
+        for (Future<Vod> future : futures) {
+            try {
+                Vod vod = future.get();
+                if (vod != null) {
+                    list.add(vod);
+                }
+            } catch (Exception e) {
+                // 处理异常情况
+            }
+        }
+
+        executorService.shutdown();
         return list;
     }
 
@@ -96,17 +163,7 @@ public class CaoLiu extends Spider {
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
-        List<Vod> list = new ArrayList<>();
-        Document doc = Jsoup.parse(OkHttp.string(siteUrl + "/thread.php?fid=47&page=1", getCookie()));
-        for (Element element : doc.select("div.url_linkkarl")) {
-            String pic = element.select("img").attr("data-aes");
-            String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
-            String name = element.select("h2").text();
-            // 获取图片进行解密
-            String string = OkHttp.string(pic);
-            String picView = aesDecrypt(string);
-            list.add(new Vod(href, name, picView));
-        }
+        List<Vod> list = parseHtml(siteUrl,"");
         return Result.string(classes, list);
     }
 
