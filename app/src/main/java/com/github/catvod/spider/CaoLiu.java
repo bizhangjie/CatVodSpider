@@ -108,8 +108,8 @@ public class CaoLiu extends Spider {
         if (tid == "57") {
             Document doc = Jsoup.parse(OkHttp.string(target, getCookie()));
             List<Vod> list = parseHtml(doc);
-            Integer total = (Integer.parseInt(pg) + 1) * 20;
-            return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
+            Integer total = (Integer.parseInt(pg) + 1) * 100;
+            return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 100, total, list);
         }
         List<Vod> list = new ArrayList<>();
         // 图文结合模版
@@ -134,8 +134,8 @@ public class CaoLiu extends Spider {
                 list.add(new Vod(id, name, ""));
             }
         }
-        Integer total = (Integer.parseInt(pg) + 1) * 20;
-        return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
+        Integer total = (Integer.parseInt(pg) + 1) * 100;
+        return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 100, total, list);
     }
 
     @Override

@@ -103,8 +103,8 @@ public class MiMei extends Spider {
         }else {
             list = parseHtml(doc);
         }
-        Integer total = (Integer.parseInt(pg) + 1) * 20;
-        return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 20, total, list);
+        Integer total = (Integer.parseInt(pg) + 1) * 30;
+        return Result.string(Integer.parseInt(pg), Integer.parseInt(pg) + 1, 30, total, list);
     }
 
     @Override
