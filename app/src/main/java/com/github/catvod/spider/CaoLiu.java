@@ -56,10 +56,10 @@ public class CaoLiu extends Spider {
                 String pic = element.select("img").attr("data-aes");
                 String id = element.select("img").attr("alt");
                 // 获取图片进行解密
-                String string = OkHttp.string(pic);
-                String picView = aesDecrypt(string);
+//                String string = OkHttp.string(pic);
+//                String picView = aesDecrypt(string);
                 String name = "看圖片";
-                list.add(new Vod(id, name, picView));
+                list.add(new Vod(id, name, pic));
             } catch (Exception e) {
             }
         }
@@ -120,9 +120,9 @@ public class CaoLiu extends Spider {
                 String href = element.attr("data-url").replace("read.php?tid=", "").split("&")[0];
                 String name = element.select("h2").text();
                 // 获取图片进行解密
-                String string = OkHttp.string(pic);
-                String picView = aesDecrypt(string);
-                list.add(new Vod(href, name, picView));
+//                String string = OkHttp.string(pic);
+//                String picView = aesDecrypt(string);
+                list.add(new Vod(href, name, pic));
             }
         }
         // 文字列表模版
