@@ -5,9 +5,8 @@ import com.github.catvod.bean.Result;
 import com.github.catvod.bean.Vod;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.net.OkHttp;
-import com.github.catvod.utils.Json;
+import com.github.catvod.utils.CgImageUtil;
 import com.github.catvod.utils.Util;
-import com.google.gson.JsonElement;
 
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -18,6 +17,11 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -36,28 +40,69 @@ public class Cg51 extends Spider {
         return headers;
     }
 
+//    private List<Vod> parseVods(Document doc) {
+//        List<Vod> list = new ArrayList<>();
+//        for (Element element : doc.select("article")) {
+//            String pic = String.valueOf(element.select("script"));
+//            String pattern = "'(https?://[^']+)";
+//            Pattern regex = Pattern.compile(pattern);
+//            Matcher matcher = regex.matcher(pic);
+//            String PicAddress = "";
+//            if (matcher.find()) {
+//                PicAddress = CgImageUtil.loadBackgroundImage(matcher.group(1));
+//            } else {
+//            }
+//            String url = element.select("a").attr("href");
+//            String name = element.select(".post-card-title").text();
+//            String id = url.split("/")[2];
+//            if (name != "" && url != ""){
+//                list.add(new Vod(id, name, PicAddress));
+//            }
+//        }
+//        return list;
+//    }
+
     private List<Vod> parseVods(Document doc) {
         List<Vod> list = new ArrayList<>();
+        ExecutorService executorService = Executors.newFixedThreadPool(20); // 创建一个线程池，最大并发数为10
+
+        List<Callable<String>> tasks = new ArrayList<>(); // 用于存储所有的任务
+
         for (Element element : doc.select("article")) {
             String pic = String.valueOf(element.select("script"));
             String pattern = "'(https?://[^']+)";
             Pattern regex = Pattern.compile(pattern);
             Matcher matcher = regex.matcher(pic);
             String PicAddress = "";
+
             if (matcher.find()) {
-                PicAddress = proxyImgUrl + matcher.group(1);
-            } else {
+                String imageUrl = matcher.group(1);
+                tasks.add(() -> CgImageUtil.loadBackgroundImage(imageUrl)); // 创建一个任务，并将其添加到任务列表中
             }
+
             String url = element.select("a").attr("href");
             String name = element.select(".post-card-title").text();
             String id = url.split("/")[2];
-            if (name != "" && url != ""){
+            if (!name.isEmpty() && !url.isEmpty()) {
                 list.add(new Vod(id, name, PicAddress));
             }
         }
+        try {
+            // 执行所有的任务，并获取结果
+            List<Future<String>> futures = executorService.invokeAll(tasks);
+
+            // 遍历任务结果，并将结果设置到对应的Vod对象中
+            for (int i = 0; i < futures.size(); i++) {
+                Vod vod = list.get(i);
+                String result = futures.get(i).get();
+                vod.setVodPic(result);
+            }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+        executorService.shutdown(); // 关闭线程池
         return list;
     }
-
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
