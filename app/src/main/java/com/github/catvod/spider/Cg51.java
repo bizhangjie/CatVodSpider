@@ -49,7 +49,7 @@ public class Cg51 extends Spider {
 //            Matcher matcher = regex.matcher(pic);
 //            String PicAddress = "";
 //            if (matcher.find()) {
-//                PicAddress = CgImageUtil.loadBackgroundImage(matcher.group(1));
+//                PicAddress = proxyImgUrl + matcher.group(1);
 //            } else {
 //            }
 //            String url = element.select("a").attr("href");
@@ -93,9 +93,11 @@ public class Cg51 extends Spider {
 
             // 遍历任务结果，并将结果设置到对应的Vod对象中
             for (int i = 0; i < futures.size(); i++) {
-                Vod vod = list.get(i);
-                String result = futures.get(i).get();
-                vod.setVodPic(result);
+                if (i < list.size()) { // 确保索引不超出列表范围
+                    Vod vod = list.get(i);
+                    String result = futures.get(i).get();
+                    vod.setVodPic(result);
+                }
             }
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
