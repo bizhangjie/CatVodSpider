@@ -16,23 +16,15 @@
   "sites": [
     {
       "key": "JustLive",
-      "name": "JustLive",
+      "name": "JustLive | 直播",
       "type": 3,
       "api": "csp_JustLive",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "Jable",
-      "name": "Jable",
-      "type": 3,
-      "api": "csp_Jable",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "QxiTv",
-      "name": "7喜影视",
+      "name": "7喜影视 | 影视",
       "type": 3,
       "api": "csp_QxiTv",
       "searchable": 1,
@@ -40,7 +32,7 @@
     },
     {
       "key": "Ikanbot",
-      "name": "Ikanbot",
+      "name": "Ikanbot | 图密×",
       "type": 3,
       "api": "csp_Ikanbot",
       "searchable": 1,
@@ -48,15 +40,23 @@
     },
     {
       "key": "W55Movie",
-      "name": "555电影",
+      "name": "555电影 | 搜索×",
       "type": 3,
       "api": "csp_W55Movie",
       "searchable": 0,
       "filterable": 1
     },
     {
+      "key": "Jable",
+      "name": "Jable | 科学",
+      "type": 3,
+      "api": "csp_Jable",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "J91",
-      "name": "91",
+      "name": "91 | 珍惜",
       "type": 3,
       "api": "csp_J91",
       "searchable": 1,
@@ -64,7 +64,7 @@
     },
     {
       "key": "Cg51",
-      "name": "51吃瓜",
+      "name": "51吃瓜 | 图密√",
       "type": 3,
       "api": "csp_Cg51",
       "searchable": 1,
@@ -72,7 +72,7 @@
     },
     {
       "key": "XVideos",
-      "name": "XVideos",
+      "name": "XVideos | 珍惜",
       "type": 3,
       "api": "csp_XVideos",
       "searchable": 1,
@@ -80,7 +80,7 @@
     },
     {
       "key": "MiMei",
-      "name": "迷妹",
+      "name": "迷妹 | 珍惜",
       "type": 3,
       "api": "csp_MiMei",
       "searchable": 1,
@@ -88,7 +88,7 @@
     },
     {
       "key": "CaoLiu",
-      "name": "小草",
+      "name": "小草 | 图密√",
       "type": 3,
       "api": "csp_CaoLiu",
       "searchable": 0,
