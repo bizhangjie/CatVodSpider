@@ -107,6 +107,14 @@
       "filterable": 1
     },
     {
+      "key": "Douban",
+      "name": "豆瓣 | 图密√",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "filterable": 1
+    },
+    {
       "key": "push_agent",
       "name": "推送",
       "type": 3,
