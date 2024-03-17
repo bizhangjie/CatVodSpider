@@ -135,10 +135,11 @@ public class Cg51 extends Spider {
         for (Element element : doc.select("div.dplayer")) {
             String play = element.attr("data-config");
             JSONObject jsonObject = new JSONObject(play);
+            JSONObject video = jsonObject.getJSONObject("video");
             if (playUrl == ""){
-                playUrl = "第" + index + "集$" + jsonObject.get("url");
+                playUrl = "第" + index + "集$" + video.get("url");
             }else {
-                playUrl = playUrl + "#第" + index + "集$" + jsonObject.get("url");
+                playUrl = playUrl + "#第" + index + "集$" + video.get("url");
             }
             index++;
         }
