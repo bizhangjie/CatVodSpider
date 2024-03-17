@@ -117,7 +117,7 @@
     {
       "key": "IQIYI",
       "name": "愛奇藝 | 搜索",
-      "type": 8,
+      "type": 3,
       "api": "csp_IQIYI",
       "searchable": 1,
       "filterable": 1
