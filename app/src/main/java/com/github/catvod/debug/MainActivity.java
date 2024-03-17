@@ -12,6 +12,7 @@ import com.github.catvod.crawler.Spider;
 import com.github.catvod.spider.CaoLiu;
 import com.github.catvod.spider.Cg51;
 import com.github.catvod.spider.Douban;
+import com.github.catvod.spider.IQIYI;
 import com.github.catvod.spider.Ikanbot;
 import com.github.catvod.spider.Init;
 import com.github.catvod.spider.J91;
@@ -62,7 +63,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new Cg51();
+            spider = new IQIYI();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
