@@ -117,9 +117,17 @@
     {
       "key": "IQIYI",
       "name": "愛奇藝 | 搜索",
-      "type": 3,
+      "type": 4,
       "api": "csp_IQIYI",
       "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "MGTV",
+      "name": "芒果 | 视频",
+      "type": 4,
+      "api": "csp_MGTV",
+      "searchable": 0,
       "filterable": 1
     },
     {
@@ -151,7 +159,7 @@
     },
     {
       "name": "爱心笔记本",
-      "type": 1,
+      "type": 4,
       "url": "http://119.91.123.253:2345/Api/yun.php?url="
     },
     {

@@ -19,6 +19,7 @@ import com.github.catvod.spider.J91;
 import com.github.catvod.spider.Jable;
 import com.github.catvod.spider.JavDb;
 import com.github.catvod.spider.JustLive;
+import com.github.catvod.spider.MGTV;
 import com.github.catvod.spider.MiMei;
 import com.github.catvod.spider.QxiTv;
 import com.github.catvod.spider.W55Movie;
@@ -63,7 +64,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new IQIYI();
+            spider = new MGTV();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -89,7 +90,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("/suoyoushipin/zhibo", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("4", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }

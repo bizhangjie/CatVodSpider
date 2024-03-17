@@ -11,7 +11,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 > ❌ 无法使用
 
 | **站点** | **类别** | **调用名称** | **状态** |
-|--------|--------|--------| -------- |
+|--------|--------|-------| -------- |
 | 91     | 视频     | csp_J91 | 🟢       |
 | 51吃瓜   | 吃瓜     | csp_Cg51 | 🟢       |
 | Jabel  | 教学     | csp_Jable | 🟢       |
@@ -23,6 +23,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | CaoLiu  | 视频     | csp_CaoLiu | 🟢       |
 | MiMei  | 视频     | csp_MiMei | 🟢       |
 | XVideos  | 视频     | csp_XVideos | 🟢       |
+| MGTV  | 视频     | csp_MGTV | 🟢       |
 
 > jar脚本
 ```shell
