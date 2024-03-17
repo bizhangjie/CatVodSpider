@@ -117,7 +117,7 @@
     {
       "key": "IQIYI",
       "name": "愛奇藝 | 搜索",
-      "type": 3,
+      "type": 8,
       "api": "csp_IQIYI",
       "searchable": 1,
       "filterable": 1
@@ -137,7 +137,7 @@
     {
       "name": "解析聚合",
       "type": 3,
-      "url": "http://119.91.123.253:2345/Api/yun.php?url="
+      "url": "Demo"
     },
     {
       "name": "Json并发",
@@ -148,6 +148,11 @@
       "name": "Json轮询",
       "type": 2,
       "url": "Sequence"
+    },
+    {
+      "name": "爱心笔记本",
+      "type": 8,
+      "url": "http://119.91.123.253:2345/Api/yun.php?url="
     },
     {
       "name": "魏晓芳",
