@@ -116,7 +116,7 @@
     },
     {
       "key": "IQIYI",
-      "name": "豆瓣 | 仅推荐",
+      "name": "愛奇藝 | 搜索",
       "type": 3,
       "api": "csp_IQIYI",
       "searchable": 1,
