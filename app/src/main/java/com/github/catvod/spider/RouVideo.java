@@ -87,7 +87,8 @@ public class RouVideo extends Spider {
         Gson gson = new Gson();
         JsonObject jsonObject = gson.fromJson(string, JsonObject.class);
         JsonObject video = jsonObject.getAsJsonObject("video");
-        vod.setVodPlayUrl("播放$" + video.get("videoUrl"));
+        String playUrl = video.get("videoUrl").toString().replace("\"", "");
+        vod.setVodPlayUrl("播放$" + playUrl);
         return Result.string(vod);
     }
 
