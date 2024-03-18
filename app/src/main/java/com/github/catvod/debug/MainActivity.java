@@ -22,6 +22,7 @@ import com.github.catvod.spider.JustLive;
 import com.github.catvod.spider.MGTV;
 import com.github.catvod.spider.MiMei;
 import com.github.catvod.spider.QxiTv;
+import com.github.catvod.spider.RouVideo;
 import com.github.catvod.spider.W55Movie;
 import com.github.catvod.spider.Wogg;
 import com.github.catvod.spider.XVideos;
@@ -64,7 +65,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new Cg51();
+            spider = new RouVideo();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -90,7 +91,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("wpcz", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("探花", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -98,7 +99,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("125610")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("cltwqjwpk0000vnaosygqajdn")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
