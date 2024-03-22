@@ -77,7 +77,7 @@ public class Ikanbot extends Spider {
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid + "-热门";
-        if (pg != "1"){
+        if (!"1".equals(pg)){
             target = target + "-p-" + pg;
         }
         Document doc = Jsoup.parse(OkHttp.string(target.concat(".html"), getHeaders()));

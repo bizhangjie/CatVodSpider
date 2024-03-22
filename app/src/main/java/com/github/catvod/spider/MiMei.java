@@ -90,7 +90,7 @@ public class MiMei extends Spider {
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         String target = cateUrl + tid;
-        if (pg == "1"){
+        if ("1".equals(pg)){
             target = target ;
         }else {
             target = target + "/index_" + pg + ".html";
