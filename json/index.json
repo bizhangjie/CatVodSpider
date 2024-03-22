@@ -139,6 +139,87 @@
       "filterable": 1
     },
     {
+      "key": "Xb6v",
+      "name": "新版6V | 视频",
+      "type": 3,
+      "api": "csp_Xb6v",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Jianpian",
+      "name": "荐片 | 视频",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Kanqiu",
+      "name": "88看球 | 比赛",
+      "type": 3,
+      "api": "csp_Kanqiu",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Ying",
+      "name": "樱花动漫 | 动漫",
+      "type": 3,
+      "api": "csp_Ying",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Ysj",
+      "name": "异世界动漫 | 动漫",
+      "type": 3,
+      "api": "csp_Ysj",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Dm84",
+      "name": "动漫巴士 | 动漫",
+      "type": 3,
+      "api": "csp_Dm84",
+      "searchable": 1,
+      "filterable": 1
+    },
+
+    {
+      "key": "Kugou",
+      "name": "酷狗 | 音乐",
+      "type": 3,
+      "api": "csp_Kugou",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Eighteen",
+      "name": "18 | 视频",
+      "type": 3,
+      "api": "csp_Eighteen",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "FirstAid",
+      "name": "健康 | 视频",
+      "type": 3,
+      "api": "csp_FirstAid",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Bili",
+      "name": "B站 | 视频",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "push_agent",
       "name": "推送",
       "type": 3,

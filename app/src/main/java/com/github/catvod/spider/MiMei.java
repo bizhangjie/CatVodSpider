@@ -121,7 +121,7 @@ public class MiMei extends Spider {
         }
         Vod vod = new Vod();
         vod.setVodId(ids.get(0));
-        vod.setVodName(name);
+        vod.setVodName(name.replace("迷妹网",""));
         vod.setVodPlayFrom("MiMei");
         vod.setVodPlayUrl("播放$" + "https://3bmmikh.life/new/hls" + PlayUrl);
         return Result.string(vod);
