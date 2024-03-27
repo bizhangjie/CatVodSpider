@@ -47,3 +47,8 @@ https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/
 ```shell
 https://api.buxiangyao.link/tvbox/tv.txt
 ```
+
+> 在线观看（带字幕）
+```shell
+https://api.buxiangyao.link/jinricp
+```
