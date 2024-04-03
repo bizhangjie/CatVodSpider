@@ -53,7 +53,7 @@ https://api.buxiangyao.link/tvbox/tv.txt
 https://api.buxiangyao.link/jinricp
 ```
 
-> 安卓app合集你懂得 访问key => buxiangyao
+> 安卓app合集 你懂得 访问key => buxiangyao
 ```shell
 https://wwl.lanzoue.com/b04xayf7e
 ```
