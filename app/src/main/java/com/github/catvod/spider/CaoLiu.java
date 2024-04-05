@@ -35,7 +35,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class CaoLiu extends Spider {
 
-    private static final String siteUrl = "https://www.cld296.top";
+    private static final String siteUrl = "https://cl2404af1f.top";
     private static final String cateUrl = siteUrl + "/thread.php?fid=";
     private static final String detailUrl = siteUrl + "/video.php?tid=";
     private static final String searchUrl = "https://api.3bmmjla.life/Api/getSearch";
@@ -49,7 +49,7 @@ public class CaoLiu extends Spider {
     private HashMap<String, String> getCookie() {
         HashMap<String, String> headers = new HashMap<>();
         headers.put("User-Agent", Util.CHROME);
-        headers.put("Cookie", "a2640_online=no; _gid=GA1.2.1938127140.1710303567; a2640_readlog=%2C2075561%2C; a2640_winduser=AFJWU1xdDT4EUldQAFAIBQlYCFJbBgdSWQ9WWAIAAgIAVwRZXAAAA20%3D; a2640_ck_info=%2F%09; a2640_appuser=DAUCUg5bDD0HVgYFVw9bUQlYBAUPB1VUWAxVXFNVVV1TAwRZUFdUAj8%3D; a2640_ol_offset=225119; a2640_threadlog=%2C2075561%2C47%2C; a2640_lastpos=other; _ga=GA1.1.745497893.1710303567; _ga_LQZNZ7TBVX=GS1.1.1710303566.1.1.1710305180.0.0.0; a2640_lastvisit=73%091710305199%09%2Fvideo.php%3Ftid%3D1948195; _ga_KCKJL9NRY7=GS1.1.1710303566.1.1.1710305199.0.0.0; _ga_QTT9CLMQSW=GS1.1.1710303566.1.1.1710305199.0.0.0; _ga_255J96M2SG=GS1.1.1710303566.1.1.1710305199.0.0.0");
+        headers.put("Cookie", "a2640_online=no; a2640_winduser=DgUBBFRQBDlUUQoAUwdVBwhWAgdSAVUCAgYCUFsGBwNWAQhXUwUABGs%3D; a2640_ck_info=%2F%09; a2640_appuser=DAQHUwBVDz1SUgIFAw4CBQFTAAZUVgEHCQIEU1MDVwoBAwFSUQQGUz8%3D; a2640_ol_offset=30153; a2640_lastpos=other; a2640_lastvisit=0%091712283620%09%2Fdomainjs.php%3Ftype%3D3%26t%3D094");
         return headers;
     }
 

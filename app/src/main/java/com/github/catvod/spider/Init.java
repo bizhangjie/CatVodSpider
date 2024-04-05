@@ -43,7 +43,6 @@ public class Init {
     public static void init(Context context) {
         get().app = ((Application) context);
         SpiderDebug.log("自定義爬蟲代碼載入成功！");
-        Toast.makeText(context, "免费脚本", Toast.LENGTH_SHORT).show();
     }
 
     public static void execute(Runnable runnable) {
