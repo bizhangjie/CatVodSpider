@@ -24,6 +24,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | MiMei  | 视频     | csp_MiMei | 🟢       |
 | XVideos  | 视频     | csp_XVideos | 🟢       |
 | MGTV  | 视频     | csp_MGTV | 🟢       |
+| DaGongRen  | 视频     | csp_DaGongRen | 🟢       |
 
 > jar脚本
 ```shell
