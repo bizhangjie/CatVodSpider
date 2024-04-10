@@ -11,6 +11,7 @@ import com.github.catvod.R;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.spider.CaoLiu;
 import com.github.catvod.spider.Cg51;
+import com.github.catvod.spider.DaGongRen;
 import com.github.catvod.spider.Douban;
 import com.github.catvod.spider.Fpie2;
 import com.github.catvod.spider.IQIYI;
@@ -66,7 +67,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new CaoLiu();
+            spider = new DaGongRen();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -92,7 +93,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("57", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("dianshiju", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -100,7 +101,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("cltwqjwpk0000vnaosygqajdn")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("122554-1-1.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -108,7 +109,7 @@ public class MainActivity extends Activity {
 
     public void playerContent() {
         try {
-            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "454873-5-5.html", new ArrayList<>()));
+            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "122554-1-1.html", new ArrayList<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
