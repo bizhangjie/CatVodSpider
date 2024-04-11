@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new HkTv();
+            spider = new CaoLiu();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("1", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("57", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
