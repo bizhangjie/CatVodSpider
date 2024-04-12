@@ -53,8 +53,8 @@ public class Ikanbot extends Spider {
     @Override
     public String homeContent(boolean filter) throws Exception {
         List<Class> classes = new ArrayList<>();
-        String[] typeIdList = {"/index-movie", "/index-tv"};
-        String[] typeNameList = {"热门电影", "热门剧集"};
+        String[] typeIdList = {"/index-movie-热门", "/index-tv-热门", "/index-tv-国产剧", "/index-tv-韩剧"};
+        String[] typeNameList = {"热门电影", "热门剧集", "国产剧", "韩剧"};
         for (int i = 0; i < typeNameList.length; i++) {
             classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
@@ -76,7 +76,7 @@ public class Ikanbot extends Spider {
 
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
-        String target = cateUrl + tid + "-热门";
+        String target = cateUrl + tid;
         if (!"1".equals(pg)){
             target = target + "-p-" + pg;
         }

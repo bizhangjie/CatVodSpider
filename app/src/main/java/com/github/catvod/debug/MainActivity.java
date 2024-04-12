@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new CaoLiu();
+            spider = new Ikanbot();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("166107.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("846223")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
