@@ -51,7 +51,7 @@ https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/TVBOX盒子.txt
 ```
 
-> 韩国熊猫tv
+> 韩国熊猫tv 需科学
 ```shell
 https://api.buxiangyao.link/tvbox/tv.txt
 ```
