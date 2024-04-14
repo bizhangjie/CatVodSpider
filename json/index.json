@@ -179,6 +179,14 @@
       "filterable": 1
     },
     {
+      "key": "api.apilyzy.com",
+      "name": "成人65",
+      "type": 1,
+      "api": "https://api.apilyzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "push_agent",
       "name": "推送",
       "type": 3,
