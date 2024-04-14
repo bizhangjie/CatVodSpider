@@ -1,69 +1,69 @@
 {
   "sites": [
     {
-      key: 'csp_77',
-      name: '酷云七七',
-      type: 3,
-      api: 'csp_Kunyu77',
-      searchable: 1,
-      quickSearch: 1,
-      filterable: 1
+      "key": "csp_77",
+      "name": "酷云七七",
+      "type": 3,
+      "api": "csp_Kunyu77",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      key: 'SP360',
-      name: '360影视',
-      api: 'csp_SP360',
-      type: 3,
-      filterable: 1,
-      quickSearch: 1,
-      searchable: 1
+      "key": "SP360",
+      "name": "360影视",
+      "api": "csp_SP360",
+      "type": 3,
+      "filterable": 1,
+      "quickSearch": 1,
+      "searchable": 1
     },
     {
-      key: '小苹果',
-      name: '小苹果',
-      type: 3,
-      api: 'csp_LiteApple',
-      searchable: 1,
-      quickSearch: 1,
-      filterable: 1
+      "key": "小苹果",
+      "name": "小苹果",
+      "type": 3,
+      "api": "csp_LiteApple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      key: '快看',
-      name: '快看',
-      type: 3,
-      api: 'csp_Kuaikan',
-      searchable: 1,
-      quickSearch: 1,
-      filterable: 1
+      "key": "快看",
+      "name": "快看",
+      "type": 3,
+      "api": "csp_Kuaikan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      key: 'AppTT',
-      name: '图图',
-      type: '3',
-      api: 'csp_Dora',
-      searchable: '1',
-      quickSearch: '1',
-      filterable: '1',
-      ext: '110c922de7d69804467fb83d3bb664b5',
-      jar: 'http://xn--cdun98c.tk:86/api/v3/file/get/737/ts.jar?sign=RyqCdJ4fn0AEjlN5ZlYqm02vO0V_0GIOeRmCBFekX7o%3D%3A0'
+      "key": "AppTT",
+      "name": "图图",
+      "type": "3",
+      "api": "csp_Dora",
+      "searchable": "1",
+      "quickSearch": "1",
+      "filterable": "1",
+      "ext": "110c922de7d69804467fb83d3bb664b5",
+      "jar": "http://xn--cdun98c.tk:86/api/v3/file/get/737/ts.jar?sign=RyqCdJ4fn0AEjlN5ZlYqm02vO0V_0GIOeRmCBFekX7o%3D%3A0"
     },
     {
-      key: 'csp_Lib',
-      name: 'LibVio',
-      type: 3,
-      api: 'csp_Lib',
-      searchable: 1,
-      quickSearch: 1,
-      filterable: 1
+      "key": "csp_Lib",
+      "name": "LibVio",
+      "type": 3,
+      "api": "csp_Lib",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      key: 'csp_Auete',
-      name: '奥特',
-      type: 3,
-      api: 'csp_Auete',
-      searchable: 1,
-      quickSearch: 1,
-      filterable: 1
+      "key": "csp_Auete",
+      "name": "奥特",
+      "type": 3,
+      "api": "csp_Auete",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "Juhuang",
@@ -85,13 +85,13 @@
       "ext": "https://freed.yuanhsing.cf/TVBox/MaooXP/kuqimv.json"
     },
     {
-      key: 'csp_appysv2_M2_haiwai影视',
-      name: '淘片影视',
-      type: 0,
-      api: 'https://taopianapi.com/home/cjapi/as/mc/vod/xml',
-      searchable: 1,
-      quickSearch: 0,
-      filterable: 0
+      "key": "csp_appysv2_M2_haiwai影视",
+      "name": "淘片影视",
+      "type": 0,
+      "api": "https://taopianapi.com/home/cjapi/as/mc/vod/xml",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
     },
     {
       "key": "四虎影院",
@@ -3283,7 +3283,6 @@
       "filterable": 0
     }
   ],
-  //解析接口
   "parses": [
     {
       "name": "解析聚合",
@@ -4400,7 +4399,6 @@
     "bilibili",
     "renrenmi"
   ],
-  //解码模式
   "ijk": [
     {
       "group": "软解码",
@@ -4563,9 +4561,6 @@
       ]
     }
   ],
-  //资源包
-  //"spider":"https://gitee.com/xhb1011/tvbox/raw/master/jar/tvbox.jar;md5;3BBE25C7A4BC9DD927D24258686517E1",
-
   "lives": [
     {
       "group": "redirect",
@@ -4580,19 +4575,7 @@
     }
   ],
   "spider": "https://agit.ai/SexTVBox/TVBox/raw/branch/master/1009_.jar",
-  //壁纸接口
   "wallpaper": "http://api.btstu.cn/sjbz/?lx=meizi",
-  //spider:'https://raw.githubusercontent.com/Guard-H/tvbox/main/jar/cc.jar',
-  //lives:[{group:'redirect',channels:[{name:'live',urls:['proxy://do=live&type=txt&ext=aHR0cDovL2hvbWUuanVuZGllLnRvcDo4MS9DYXQvdHYvbGl2ZS50eHQ=']}]}],
-
-  //"lives":[{"group": "redirect","channels": [{"name": "redirect","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9yYXcuaXFpcS5pby9DeXJpbDA1NjMvbGFuamluZ19saXZlL21haW4vVFZib3hfRnJlZS9MSVZFL0ZyZWUvdHZib3hfbGl2ZS50eHQ="]}]}],
-
-
-  //电视直播，txt=后为base64加密
-  //"lives": [{"group": "redirect","channels": [{"name": "redirect","urls": ["proxy://do=live&type=txt&ext=aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL0N5cmlsMDU2My9sYW5qaW5nX2xpdmVAbWFpbi9UVmJveF9GcmVlL0xJVkUvRnJlZS90dmJveF9saXZlLnR4dA=="]}]}],
-
-
-  //广告过滤
   "ads": [
     "mimg.0c1q0l.cn",
     "www.googletagmanager.com",
