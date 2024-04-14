@@ -30,10 +30,17 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
 ```
+
 > 直接使用接口
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index.json
 ```
+
+> 纯18接口
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/18sexN.json
+```
+
 > jsdelivr 免费 CDN
 ```shell
 https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
@@ -49,7 +56,7 @@ https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/
 https://api.buxiangyao.link/tvbox/tv.txt
 ```
 
-> 在线观看（带字幕）
+> 在线观看（带字幕）需科学
 ```shell
 https://api.buxiangyao.link/jinricp
 ```
