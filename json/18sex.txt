@@ -135,7 +135,7 @@
       "key": "精工厂",
       "name": "🔞精工厂",
       "type": 0,
-      "api": "https://jgczyapi.com/home/cjapi/kld2/mc/vod/xml",
+      "api": "https://jgczyapi.com/cjapi/sda/vod/xml.html",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
