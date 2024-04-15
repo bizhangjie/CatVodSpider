@@ -37,6 +37,15 @@
       "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     },
     {
+      "key": "ikanbot",
+      "name": "🤖┃爱看机器人┃🤖",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/ikanbot.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
+    {
       "key": "JustLive",
       "name": "JustLive | 直播",
       "type": 3,
