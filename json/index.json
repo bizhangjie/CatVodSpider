@@ -28,41 +28,6 @@
   ],
   "sites": [
     {
-      "key": "nangua",
-      "name": "🎃┃南瓜影视┃🎃",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/nangua.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "ikanbot",
-      "name": "🤖┃爱看机器人┃🤖",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/ikanbot.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "hanxiucao",
-      "name": "┃含羞草┃",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/hanxiucao.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "JustLive",
-      "name": "JustLive | 直播",
-      "type": 3,
-      "api": "csp_JustLive",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "QxiTv",
       "name": "7喜影视 | 影视",
       "type": 3,
@@ -101,6 +66,32 @@
       "api": "csp_HkTv",
       "searchable": 0,
       "filterable": 1
+    },
+    {
+      "key": "JustLive",
+      "name": "JustLive | 直播",
+      "type": 3,
+      "api": "csp_JustLive",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "nangua",
+      "name": "🎃┃南瓜影视┃🎃",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/nangua.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
+    {
+      "key": "ikanbot",
+      "name": "🤖┃爱看机器人┃🤖",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/ikanbot.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     },
     {
       "key": "Jable",
