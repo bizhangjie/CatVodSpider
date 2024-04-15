@@ -46,6 +46,15 @@
       "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     },
     {
+      "key": "hanxiucao",
+      "name": "\uD83D\uDD1E┃含羞草┃\uD83D\uDD1E",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/hanxiucao.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
+    {
       "key": "JustLive",
       "name": "JustLive | 直播",
       "type": 3,
