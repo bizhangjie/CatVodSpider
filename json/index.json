@@ -3,7 +3,7 @@
   "lives": [
     {
       "name": "直播ipv6",
-      "type":"0",
+      "type": "0",
       "pass": true,
       "url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -11,14 +11,15 @@
     },
     {
       "name": "斗鱼",
-      "type":"0",
+      "type": "0",
       "pass": true,
       "url": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/douyulive.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },{
+    },
+    {
       "name": "第三方源|不保存可用",
-      "type":"0",
+      "type": "0",
       "pass": true,
       "url": "http://home.jundie.top:81/Cat/tv/live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
@@ -26,6 +27,15 @@
     }
   ],
   "sites": [
+    {
+      "key": "nangua",
+      "name": "🎃┃南瓜影视┃🎃",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/nangua.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
     {
       "key": "JustLive",
       "name": "JustLive | 直播",
