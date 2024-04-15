@@ -47,7 +47,7 @@
     },
     {
       "key": "hanxiucao",
-      "name": "\uD83D\uDD1E┃含羞草",
+      "name": "┃含羞草┃",
       "playerType": 0,
       "type": 3,
       "api": "./js/hanxiucao.js",
