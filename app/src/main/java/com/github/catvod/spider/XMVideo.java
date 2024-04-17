@@ -163,16 +163,7 @@ public class XMVideo extends Spider {
 
     @Override
     public String playerContent(String flag, String id, List<String> vipFlags) throws Exception {
-        String target = playUrl.concat(id);
-        Document doc = Jsoup.parse(OkHttp.string(target));
-        String regex = "\"url\\\":\\\"(.*?)\\\",\\\"url_next\\\":";
-
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(doc.html());
-        String url = "";
-        if (matcher.find()) {
-            url = URLDecoder.decode(matcher.group(1), "UTF-8").split("&")[0];
-        }
+        String url = id;
         return Result.get().url(url).header(getHeaders()).string();
     }
 }
