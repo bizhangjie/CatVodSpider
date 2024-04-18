@@ -27,6 +27,7 @@ import com.github.catvod.spider.MiMei;
 import com.github.catvod.spider.QxiTv;
 import com.github.catvod.spider.RouVideo;
 import com.github.catvod.spider.W55Movie;
+import com.github.catvod.spider.WWRR;
 import com.github.catvod.spider.Wogg;
 import com.github.catvod.spider.XMVideo;
 import com.github.catvod.spider.XVideos;
@@ -69,7 +70,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new XMVideo();
+            spider = new WWRR();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -95,7 +96,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("6", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("1", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -103,7 +104,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("网红空姐‘温柔与霸道’空姐制服丝袜性爱私拍～扛腿抽插后入猛操#https://hweu3.sjzsq.com/video/m3u8/202403/28/19535c45bbdf/1.jpg")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("582607.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
