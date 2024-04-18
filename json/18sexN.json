@@ -2,46 +2,10 @@
   "spider": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar;md5;f1b9ad6b437922486195793d55e31000",
   "sites": [
     {
-      "key": "(18+)JAV名优",
-      "name": "*🔞JAV名优",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "(18+)SS资源",
-      "name": "*🔞SS资源",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "*色色资源",
-      "name": "🔞色色资源",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "*博天堂",
       "name": "🔞博天堂",
       "type": 0,
       "api": "http://bttcj.com/inc/sapi.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "zp028",
-      "name": "zp028",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -56,15 +20,6 @@
       "filterable": 1
     },
     {
-      "key": "*白嫖资源",
-      "name": "🔞白嫖资源",
-      "type": 0,
-      "api": "https://www.kxgav.com/api/xml.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "*淫水机资源",
       "name": "🔞淫水机",
       "type": 0,
@@ -74,28 +29,10 @@
       "filterable": 0
     },
     {
-      "key": "*香奶儿资源",
-      "name": "🔞香奶儿",
-      "type": 0,
-      "api": "https://www.gdlsp.com/api/xml.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "*美少女资源",
       "name": "🔞美少女资源",
       "type": 0,
       "api": "https://www.msnii.com/api/xml.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "*狼少年",
-      "name": "🔞狼少年",
-      "type": 0,
-      "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -114,15 +51,6 @@
       "name": "🔞KK写真资源-伦理",
       "type": 1,
       "api": "https://kkzy.me/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "zp011",
-      "name": "🔞78乐播",
-      "type": 0,
-      "api": "https://lbapi9.com/api.php/provide/vod/at/xml/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -150,15 +78,6 @@
       "name": "🔞乐播",
       "type": 0,
       "api": "https://lbapi9.com/api.php/provide/vod/at/xml/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "zp127",
-      "name": "🔞色色资源",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -192,40 +111,6 @@
       "filterable": 0
     },
     {
-      "key": "zp124",
-      "name": "🔞色猫资源",
-      "type": 0,
-      "api": "https://api.maozyapi.com/inc/api.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "💞色色资源💞",
-      "name": "💞色色资源💞",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
-      "key": "💞环亚资源💞",
-      "name": "💞环亚资源💞",
-      "type": 0,
-      "api": "http://wmcj8.com/inc/sapi.php",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
-      "key": "cjmygzy.com",
-      "name": "成人05",
-      "type": 0,
-      "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "wmcj8.com",
       "name": "成人07",
       "type": 0,
@@ -243,38 +128,12 @@
       "quickSearch": 0
     },
     {
-      "key": "💞狼少年💞",
-      "name": "💞狼少年💞",
-      "type": 0,
-      "api": "http://cjmygzy.com/inc/sapi.php?ac=videolist",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
       "key": "💞美少女资源💞",
       "name": "💞美少女资源💞",
       "type": 0,
       "api": "https://www.msnii.com/api/xml.php",
       "searchable": 0,
       "quickSearch": 0
-    },
-    {
-      "key": "secj8.com",
-      "name": "成人08",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "mygzycj.com",
-      "name": "成人14",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
     },
     {
       "key": "bttcj.com",

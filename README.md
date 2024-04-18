@@ -33,14 +33,14 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
 ```
 
-> 直接使用接口
+> 直接使用接口 (正能量)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index.json
 ```
 
 > 纯18接口
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/18sexN.json
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index18.json
 ```
 
 > jsdelivr 免费 CDN
