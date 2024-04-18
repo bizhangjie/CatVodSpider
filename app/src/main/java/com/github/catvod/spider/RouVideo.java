@@ -21,7 +21,7 @@ import java.util.Locale;
 
 public class RouVideo extends Spider {
 
-    private static final String siteUrl = "https://rouva1.xyz";
+    private static final String siteUrl = "https://rouva2.xyz";
     private static final String cateUrl = siteUrl + "/t/";
     private static final String detailUrl = siteUrl + "/v/";
     private static final String searchUrl = siteUrl + "/search?q=";

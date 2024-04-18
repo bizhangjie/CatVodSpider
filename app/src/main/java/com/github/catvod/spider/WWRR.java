@@ -61,7 +61,7 @@ public class WWRR extends Spider {
     @Override
     public String categoryContent(String tid, String pg, boolean filter, HashMap<String, String> extend) throws Exception {
         List<Vod> list = new ArrayList<>();
-        String target = cateUrl + tid + "/" + tid;
+        String target = cateUrl + tid + "/" + pg + ".html";
         Document doc = Jsoup.parse(OkHttp.string(target, getHeaders()));
         for (Element element : doc.select("div.listA a")) {
             String pic = element.select("img").attr("src");
