@@ -31,6 +31,7 @@ import com.github.catvod.spider.WWRR;
 import com.github.catvod.spider.Wogg;
 import com.github.catvod.spider.XMVideo;
 import com.github.catvod.spider.XVideos;
+import com.github.catvod.spider.YingTan;
 import com.github.catvod.spider.Zhaozy;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
@@ -70,7 +71,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new WWRR();
+            spider = new YingTan();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -96,7 +97,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("1", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("20", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -104,7 +105,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("582607.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("250756")));
         } catch (Throwable e) {
             e.printStackTrace();
         }

@@ -26,6 +26,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | HkTv  | 视频     | csp_HkTv | 🟢       |
 | XMVideo  | 视频     | csp_XMVideo | 🟢       |
 | WWRR  | 视频     | csp_WWRR | 🟢       |
+| YingTan  | 视频     | csp_YingTan | 🟢       |
 
 > jar脚本
 ```shell
