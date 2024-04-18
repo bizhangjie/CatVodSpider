@@ -2,6 +2,16 @@
   "spider": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar;md5;f1b9ad6b437922486195793d55e31000",
   "lives": [
     {
+      "name": "直播ipv6",
+      "type": "0",
+      "pass": true,
+      "url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
+  "sites": [
+    {
       "key": "XMVideo",
       "name": "\uD83D\uDD1E 熊猫视频 | 珍惜",
       "type": 3,
@@ -64,15 +74,6 @@
       "api": "csp_RouVideo",
       "searchable": 1,
       "filterable": 1
-    },
-    {
-      "key": "yizhi",
-      "name": "影剧请换乘（index18.json换成index.json即可）",
-      "playerType": 0,
-      "type": 3,
-      "api": "",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     }
   ],
   "parses": [
