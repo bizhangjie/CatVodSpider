@@ -28,7 +28,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | WWRR  | 视频     | csp_WWRR | 🟢       |
 | YingTan  | 视频     | csp_YingTan | 🟢       |
 
-> jar脚本
+> jar脚本 (上面状态不稳定哦)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
 ```
