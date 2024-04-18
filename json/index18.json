@@ -2,148 +2,72 @@
   "spider": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar;md5;f1b9ad6b437922486195793d55e31000",
   "lives": [
     {
-      "name": "直播ipv6",
-      "type": "0",
-      "pass": true,
-      "url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "第三方源|不保存可用",
-      "type": "0",
-      "pass": true,
-      "url": "http://home.jundie.top:81/Cat/tv/live.txt",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    }
-  ],
-  "sites": [
-    {
-      "key": "YingTan",
-      "name": "\uD83D\uDCFD\uFE0F 影探 | 影视",
+      "key": "XMVideo",
+      "name": "\uD83D\uDD1E 熊猫视频 | 珍惜",
       "type": 3,
-      "api": "csp_YingTan",
+      "api": "csp_XMVideo",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "QxiTv",
-      "name": "\uD83E\uDD70 7喜 | 影视",
+      "key": "WWRR",
+      "name": "\uD83D\uDD1E 我为人人 | 珍惜",
       "type": 3,
-      "api": "csp_QxiTv",
+      "api": "csp_WWRR",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "Ikanbot",
-      "name": "\uD83E\uDD16 Ikanbot | 图密×",
+      "key": "Jable",
+      "name": "\uD83D\uDD1E Jable | 科学",
       "type": 3,
-      "api": "csp_Ikanbot",
+      "api": "csp_Jable",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "W55Movie",
-      "name": "\uD83C\uDF9E\uFE0F 555电影 | 搜索×",
+      "key": "J91",
+      "name": "\uD83D\uDD1E 91 | 珍惜",
       "type": 3,
-      "api": "csp_W55Movie",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "DaGongRen",
-      "name": "\uD83D\uDC77\u200D♂\uFE0F 打工人电影 | 影视",
-      "type": 3,
-      "api": "csp_DaGongRen",
+      "api": "csp_J91",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "HkTv",
-      "name": "☁\uFE0F TVB云播 | 影视",
+      "key": "Cg51",
+      "name": "\uD83D\uDD1E 51吃瓜 | 图密√",
       "type": 3,
-      "api": "csp_HkTv",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "JustLive",
-      "name": "\uD83D\uDCFA\uFE0F JustLive | 直播",
-      "type": 3,
-      "api": "csp_JustLive",
+      "api": "csp_Cg51",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "Xb6v",
-      "name": "6\uFE0F⃣ 新版6V | 视频",
+      "key": "XVideos",
+      "name": "\uD83D\uDD1E XVideos | 珍惜",
       "type": 3,
-      "api": "csp_Xb6v",
+      "api": "csp_XVideos",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "Douban",
-      "name": "\uD83E\uDD54 豆瓣 | 仅推荐",
+      "key": "MiMei",
+      "name": "\uD83D\uDD1E 迷妹 | 珍惜",
       "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "Jianpian",
-      "name": "\uD83D\uDCC0 荐片 | 视频",
-      "type": 3,
-      "api": "csp_Jianpian",
+      "api": "csp_MiMei",
       "searchable": 1,
       "filterable": 1
     },
     {
-      "key": "Ying",
-      "name": "\uD83C\uDF38 樱花动漫 | 动漫",
+      "key": "RouVideo",
+      "name": "\uD83D\uDD1E 肉视频 | 视频",
       "type": 3,
-      "api": "csp_Ying",
+      "api": "csp_RouVideo",
       "searchable": 1,
       "filterable": 1
-    },
-    {
-      "key": "Ysj",
-      "name": "\uD83C\uDF0F\uFE0F 异世界动漫 | 动漫",
-      "type": 3,
-      "api": "csp_Ysj",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "FirstAid",
-      "name": "\uD83D\uDCAA 健康 | 视频",
-      "type": 3,
-      "api": "csp_FirstAid",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "nangua",
-      "name": "🎃┃南瓜影视┃🎃",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/nangua.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "ikanbot",
-      "name": "🤖┃爱看机器人┃🤖",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/ikanbot.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     },
     {
       "key": "yizhi",
-      "name": "18请换乘（index.json换成index18.json即可）",
+      "name": "影剧请换乘（index18.json换成index.json即可）",
       "playerType": 0,
       "type": 3,
       "api": "",
