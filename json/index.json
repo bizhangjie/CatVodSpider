@@ -1,5 +1,5 @@
 {
-  "spider": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar;md5;bad21cd63eb9f7938b96ffee19bdf1d0",
+  "spider": "https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar;md5;b82821d663ecea65cb3faa68f6bf4239",
   "lives": [
     {
       "name": "直播ipv6",
@@ -220,24 +220,6 @@
       "api": "csp_FirstAid",
       "searchable": 1,
       "filterable": 1
-    },
-    {
-      "key": "api.apilyzy.com",
-      "name": "成人65",
-      "type": 1,
-      "api": "https://api.apilyzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "push_agent",
-      "name": "推送",
-      "type": 3,
-      "api": "csp_Push",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "3865f0ab8f124688ad786a262af9b940"
     }
   ],
   "parses": [

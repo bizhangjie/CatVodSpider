@@ -139,6 +139,6 @@ public class YingTan extends Spider {
 
     @Override
     public String playerContent(String flag, String id, List<String> vipFlags) throws Exception {
-        return Result.get().url(id).header(getHeaders()).string();
+        return Result.get().url(id).string();
     }
 }
