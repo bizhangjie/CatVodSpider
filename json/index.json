@@ -76,108 +76,10 @@
       "filterable": 1
     },
     {
-      "key": "XMVideo",
-      "name": "熊猫视频 | 珍惜",
-      "type": 3,
-      "api": "csp_XMVideo",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "WWRR",
-      "name": "我为人人 | 珍惜",
-      "type": 3,
-      "api": "csp_WWRR",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "JustLive",
       "name": "JustLive | 直播",
       "type": 3,
       "api": "csp_JustLive",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "nangua",
-      "name": "🎃┃南瓜影视┃🎃",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/nangua.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "ikanbot",
-      "name": "🤖┃爱看机器人┃🤖",
-      "playerType": 0,
-      "type": 3,
-      "api": "./js/ikanbot.js",
-      "timeout": 30,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "Jable",
-      "name": "Jable | 科学",
-      "type": 3,
-      "api": "csp_Jable",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "J91",
-      "name": "91 | 珍惜",
-      "type": 3,
-      "api": "csp_J91",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "Cg51",
-      "name": "51吃瓜 | 图密√",
-      "type": 3,
-      "api": "csp_Cg51",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "XVideos",
-      "name": "XVideos | 珍惜",
-      "type": 3,
-      "api": "csp_XVideos",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "MiMei",
-      "name": "迷妹 | 珍惜",
-      "type": 3,
-      "api": "csp_MiMei",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "CaoLiu",
-      "name": "小草 | 图密√",
-      "type": 3,
-      "api": "csp_CaoLiu",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "Douban",
-      "name": "豆瓣 | 仅推荐",
-      "type": 3,
-      "api": "csp_Douban",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "RouVideo",
-      "name": "肉视频 | 视频",
-      "type": 3,
-      "api": "csp_RouVideo",
       "searchable": 1,
       "filterable": 1
     },
@@ -215,9 +117,107 @@
     },
     {
       "key": "FirstAid",
-      "name": "健康 | 视频",
+      "name": "\uD83D\uDCAA 健康 | 视频",
       "type": 3,
       "api": "csp_FirstAid",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "nangua",
+      "name": "🎃┃南瓜影视┃🎃",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/nangua.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
+    {
+      "key": "ikanbot",
+      "name": "🤖┃爱看机器人┃🤖",
+      "playerType": 0,
+      "type": 3,
+      "api": "./js/ikanbot.js",
+      "timeout": 30,
+      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
+    },
+    {
+      "key": "XMVideo",
+      "name": "\uD83D\uDD1E 熊猫视频 | 珍惜",
+      "type": 3,
+      "api": "csp_XMVideo",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "WWRR",
+      "name": "\uD83D\uDD1E 我为人人 | 珍惜",
+      "type": 3,
+      "api": "csp_WWRR",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Jable",
+      "name": "\uD83D\uDD1E Jable | 科学",
+      "type": 3,
+      "api": "csp_Jable",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "J91",
+      "name": "\uD83D\uDD1E 91 | 珍惜",
+      "type": 3,
+      "api": "csp_J91",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Cg51",
+      "name": "\uD83D\uDD1E 51吃瓜 | 图密√",
+      "type": 3,
+      "api": "csp_Cg51",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "XVideos",
+      "name": "\uD83D\uDD1E XVideos | 珍惜",
+      "type": 3,
+      "api": "csp_XVideos",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "MiMei",
+      "name": "\uD83D\uDD1E 迷妹 | 珍惜",
+      "type": 3,
+      "api": "csp_MiMei",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "CaoLiu",
+      "name": "\uD83D\uDD1E 小草 | 图密√",
+      "type": 3,
+      "api": "csp_CaoLiu",
+      "searchable": 0,
+      "filterable": 1
+    },
+    {
+      "key": "Douban",
+      "name": "\uD83D\uDD1E 豆瓣 | 仅推荐",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "filterable": 1
+    },
+    {
+      "key": "RouVideo",
+      "name": "\uD83D\uDD1E 肉视频 | 视频",
+      "type": 3,
+      "api": "csp_RouVideo",
       "searchable": 1,
       "filterable": 1
     }
