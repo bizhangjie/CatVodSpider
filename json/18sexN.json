@@ -1,6 +1,70 @@
 {
   "sites": [
     {
+      "key": "XMVideo",
+      "name": "\uD83D\uDD1E 熊猫视频 | 珍惜",
+      "type": 3,
+      "api": "csp_XMVideo",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "WWRR",
+      "name": "\uD83D\uDD1E 我为人人 | 珍惜",
+      "type": 3,
+      "api": "csp_WWRR",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Jable",
+      "name": "\uD83D\uDD1E Jable | 科学",
+      "type": 3,
+      "api": "csp_Jable",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "J91",
+      "name": "\uD83D\uDD1E 91 | 珍惜",
+      "type": 3,
+      "api": "csp_J91",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "Cg51",
+      "name": "\uD83D\uDD1E 51吃瓜 | 图密√",
+      "type": 3,
+      "api": "csp_Cg51",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "XVideos",
+      "name": "\uD83D\uDD1E XVideos | 珍惜",
+      "type": 3,
+      "api": "csp_XVideos",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "MiMei",
+      "name": "\uD83D\uDD1E 迷妹 | 珍惜",
+      "type": 3,
+      "api": "csp_MiMei",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "RouVideo",
+      "name": "\uD83D\uDD1E 肉视频 | 视频",
+      "type": 3,
+      "api": "csp_RouVideo",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "(18+)JAV名优",
       "name": "*🔞JAV名优",
       "type": 0,
