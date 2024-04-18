@@ -84,6 +84,14 @@
       "filterable": 1
     },
     {
+      "key": "Douban",
+      "name": "\uD83E\uDD54 豆瓣 | 仅推荐",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "filterable": 1
+    },
+    {
       "key": "Jianpian",
       "name": "\uD83D\uDCC0 荐片 | 视频",
       "type": 3,
@@ -194,14 +202,6 @@
       "name": "\uD83D\uDD1E 小草 | 图密√",
       "type": 3,
       "api": "csp_CaoLiu",
-      "searchable": 0,
-      "filterable": 1
-    },
-    {
-      "key": "Douban",
-      "name": "\uD83D\uDD1E 豆瓣 | 仅推荐",
-      "type": 3,
-      "api": "csp_Douban",
       "searchable": 0,
       "filterable": 1
     },
