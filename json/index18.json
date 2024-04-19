@@ -90,7 +90,16 @@
       "api": "csp_HiPianZhiBo",
       "searchable": 1,
       "filterable": 1
-    },    {
+    },
+    {
+      "key": "JJAiPian",
+      "name": "\uD83D\uDD1E 久久爱片 | 视频",
+      "type": 3,
+      "api": "csp_JJAiPian",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "*博天堂",
       "name": "🔞博天堂",
       "type": 0,
