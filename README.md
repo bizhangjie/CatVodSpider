@@ -50,7 +50,7 @@ https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
 
 > 第三方
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/TVBOX盒子.txt
+https://jihulab.com/okcaptain/kko/-/raw/main/ok.txt
 ```
 
 > 第三方 喜欢看弹幕的可以使用，支持弹幕的app在下面合集中有，画质普遍高
