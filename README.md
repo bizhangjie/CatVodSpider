@@ -66,7 +66,7 @@ https://api.buxiangyao.link/tvbox/tv.txt
 
 > 在线观看（带字幕）需科学
 ```shell
-https://api.buxiangyao.link/jinricp
+https://api.buxiangyao.link/jp
 ```
 
 > 安卓app合集 你懂得 访问key => buxiangyao
