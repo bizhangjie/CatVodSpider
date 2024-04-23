@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import android.util.Base64;
 
 public class TvDy extends Spider {
 
@@ -154,15 +155,18 @@ public class TvDy extends Spider {
     @Override
     public String playerContent(String flag, String id, List<String> vipFlags) throws Exception {
         Document doc = Jsoup.parse(OkHttp.string(playUrl.concat(id), getHeaders()));
-        String regex = "now=base64decode(\"(.*?)\");";
+        String regex = "var now=base64decode(.*?);var";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(doc.html());
-        String url = "";
+        String url = doc.html();
         if (matcher.find()) {
-            url = matcher.group(1);
-            url = url;
+            url = decodeBase64(matcher.group(1).replace("(\\\"","").replace("\\\")",""));
         }
         return Result.get().url(url).header(getHeaders()).string();
+    }
+
+    public static String decodeBase64(String encodedString) {
+        return new String(Base64.decode(encodedString, Base64.DEFAULT));
     }
 }
