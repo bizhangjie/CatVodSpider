@@ -30,6 +30,7 @@ import com.github.catvod.spider.NCat;
 import com.github.catvod.spider.QxiTv;
 import com.github.catvod.spider.ROU223;
 import com.github.catvod.spider.RouVideo;
+import com.github.catvod.spider.TvDy;
 import com.github.catvod.spider.W55Movie;
 import com.github.catvod.spider.WWRR;
 import com.github.catvod.spider.Wogg;
@@ -75,7 +76,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new NCat();
+            spider = new TvDy();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -109,7 +110,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("230341.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("index122512.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -117,7 +118,7 @@ public class MainActivity extends Activity {
 
     public void playerContent() {
         try {
-            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "152786-10-123806.html", new ArrayList<>()));
+            Logger.t("playerContent").d(spider.playerContent("轉存原畫", "121974-1-2.html", new ArrayList<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
