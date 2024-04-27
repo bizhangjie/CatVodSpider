@@ -34,6 +34,8 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
 ```
 
+# 点播接口专区
+
 > 直接使用接口 (正能量)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index.json
@@ -54,6 +56,18 @@ https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
 https://jihulab.com/okcaptain/kko/-/raw/main/ok.txt
 ```
 
+# 直播接口专区
+
+> 虎牙一起看
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/hy.txt
+```
+
+> 成年人爱看的那些![img.png](img.png)
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/sjdy.txt
+```
+
 > 韩国熊猫tv 需科学
 ```shell
 https://api.buxiangyao.link/tvbox/tv.txt
@@ -63,6 +77,8 @@ https://api.buxiangyao.link/tvbox/tv.txt
 ```shell
 https://api.buxiangyao.link/jp
 ```
+
+# 应用专区
 
 > 安卓app合集 你懂得 访问key => buxiangyao
 ```shell
