@@ -63,6 +63,16 @@ https://jihulab.com/okcaptain/kko/-/raw/main/ok.txt
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/hy.txt
 ```
 
+> 斗鱼一起看
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/dy.txt
+```
+
+> 虎牙&斗鱼 一起看
+```shell
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/zb.txt
+```
+
 > 成年人爱看的那些![img.png](img.png)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/sjdy.txt
