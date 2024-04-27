@@ -70,7 +70,7 @@ https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/
 
 > 虎牙&斗鱼 一起看
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/zb.txt
+https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/zbyqk.txt
 ```
 
 > 成年人爱看的那些![img.png](img.png)
