@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new TvDy();
+            spider = new MiMei();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("4", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("/", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("index122512.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("702641.html")));
         } catch (Throwable e) {
             e.printStackTrace();
         }

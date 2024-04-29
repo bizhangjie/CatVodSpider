@@ -26,9 +26,9 @@ import java.util.zip.Inflater;
 public class WWRR extends Spider {
 
     private static final String siteUrl = "https://hd.6nu2.com";
-    private static final String cateUrl = siteUrl + "/index.php/home/index/";
-    private static final String detailUrl = siteUrl + "/index.php/play/";
-    private static final String searchUrl = siteUrl + "/index.php/search/video/";
+    private static final String cateUrl = siteUrl + "/home/";
+    private static final String detailUrl = siteUrl + "/play/";
+    private static final String searchUrl = siteUrl + "/search/video/";
 
     private HashMap<String, String> getHeaders() {
         HashMap<String, String> headers = new HashMap<>();
@@ -41,17 +41,16 @@ public class WWRR extends Spider {
         List<Vod> list = new ArrayList<>();
         List<Class> classes = new ArrayList<>();
         Document doc = Jsoup.parse(OkHttp.string(siteUrl, getHeaders()));
-        for (Element element : doc.select("div.div_ad_a a")) {
-            String typeId = element.attr("href").replace("/index.php/home/index/","").replace(".html","");
-            String typeName = element.text();
-            classes.add(new Class(typeId, typeName));
+        String[] typeIdList = {"/"};
+        String[] typeNameList = {"全部"};
+        for (int i = 0; i < typeNameList.length; i++) {
+            classes.add(new Class(typeIdList[i], typeNameList[i]));
         }
-        doc = Jsoup.parse(OkHttp.string(siteUrl, getHeaders()));
         for (Element element : doc.select("div.listA a")) {
             String pic = element.select("img").attr("src");
             String url = element.attr("href");
-            String name = element.select("div.name").text().replace("2048.cc-","");
-            String id = url.split("/")[3];
+            String name = element.select("div.name").text();
+            String id = url.split("/")[2];
             list.add(new Vod(id, name, pic));
         }
         return Result.string(classes, list);
@@ -66,8 +65,8 @@ public class WWRR extends Spider {
         for (Element element : doc.select("div.listA a")) {
             String pic = element.select("img").attr("src");
             String url = element.attr("href");
-            String name = element.select("div.name").text().replace("2048.cc-","");
-            String id = url.split("/")[3];
+            String name = element.select("div.name").text();
+            String id = url.split("/")[2];
             list.add(new Vod(id, name, pic));
         }
         Integer total = (Integer.parseInt(pg)+1)*20;
@@ -80,7 +79,7 @@ public class WWRR extends Spider {
         String name = doc.select("div.name.WF").text().replace("2048.cc-","");
         String pic = doc.select("div.vjs-poster img").attr("src");
 
-        Pattern pattern = Pattern.compile("abcd = '(.*?)';");
+        Pattern pattern = Pattern.compile("vodurl = '(.*?)';");
         Matcher matcher = pattern.matcher(doc.html());
         String PlayUrl = "";
         // 提取匹配到的内容
@@ -113,8 +112,8 @@ public class WWRR extends Spider {
         for (Element element : doc.select("div.listA a")) {
             String pic = element.select("img").attr("src");
             String url = element.attr("href");
-            String name = element.select("div.name").text().replace("2048.cc-","");
-            String id = url.split("/")[3];
+            String name = element.select("div.name").text();
+            String id = url.split("/")[2];
             list.add(new Vod(id, name, pic));
         }
         return Result.string(list);
