@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
 
 public class XMVideo extends Spider {
 
-    private static final String siteUrl = "https://uu11vv.com";
+    private static final String siteUrl = "https://www.rrpp55.com";
 
     private static final String Init = "https://spiderscloudcn2.51111666.com/getDataInit";
 

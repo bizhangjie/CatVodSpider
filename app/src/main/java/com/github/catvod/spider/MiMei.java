@@ -26,7 +26,7 @@ import java.util.regex.Pattern;
 
 public class MiMei extends Spider {
 
-    private static final String siteUrl = "https://tbvioih.info";
+    private static final String siteUrl = "https://qyggodk.info";
     private static final String cateUrl = siteUrl;
     private static final String detailUrl = siteUrl;
     private static final String searchUrl = "https://api.3bmmjla.life/Api/getSearch";

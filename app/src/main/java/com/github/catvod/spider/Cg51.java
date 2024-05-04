@@ -27,9 +27,7 @@ import java.util.regex.Pattern;
 
 public class Cg51 extends Spider {
 
-    private static final String proxyImgUrl = "https://api.buxiangyao.link/51cg/img/?url=";
-
-    private static final String siteUrl = "https://h25dz1.gxhfkyztz.com";
+    private static final String siteUrl = "https://h25dz1.tieqjbixn.com";
     private static final String cateUrl = siteUrl + "/category/";
     private static final String detailUrl = siteUrl + "/archives/";
     private static final String searchUrl = siteUrl + "/search?keywords=";

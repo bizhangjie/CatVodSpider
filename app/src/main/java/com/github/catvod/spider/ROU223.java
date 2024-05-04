@@ -20,9 +20,6 @@ import java.util.regex.Pattern;
 public class ROU223 extends Spider {
 
     private static final String siteUrl = "http://223rou.com";
-    private static final String cateUrl = siteUrl + "/index.php/vod/type/id/";
-    private static final String detailUrl = siteUrl + "/index.php/vod/play/id/";
-    private static final String playUrl = siteUrl + "/play/";
     private static final String searchUrl = siteUrl + "/index.php/vod/search.html?wd=";
 
     private HashMap<String, String> getHeaders() {

@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new MiMei();
+            spider = new RouVideo();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("/", "2", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("6", "2", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("702641.html")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("母亲的新男友1  回家路上遇抢劫 母亲新交热心男友 #https://hweu3.sjzsq.com/video/m3u8/202404/15/db657fc15deb/1.jpg")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
