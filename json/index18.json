@@ -76,14 +76,6 @@
       "filterable": 1
     },
     {
-      "key": "RouVideo",
-      "name": "\uD83D\uDD1E 肉视频 | 科学",
-      "type": 3,
-      "api": "csp_RouVideo",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "Jable",
       "name": "\uD83D\uDD1E Jable | 科学",
       "type": 3,
