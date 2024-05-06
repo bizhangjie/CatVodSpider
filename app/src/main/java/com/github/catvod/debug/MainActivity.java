@@ -2,43 +2,12 @@ package com.github.catvod.debug;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.github.catvod.R;
 import com.github.catvod.crawler.Spider;
-import com.github.catvod.spider.AvgoTv;
-import com.github.catvod.spider.CaoLiu;
-import com.github.catvod.spider.Cg51;
-import com.github.catvod.spider.DaGongRen;
-import com.github.catvod.spider.Douban;
-import com.github.catvod.spider.Fpie2;
-import com.github.catvod.spider.HiPianZhiBo;
-import com.github.catvod.spider.HkTv;
-import com.github.catvod.spider.IQIYI;
-import com.github.catvod.spider.Ikanbot;
 import com.github.catvod.spider.Init;
 import com.github.catvod.spider.J91;
-import com.github.catvod.spider.JJAiPian;
-import com.github.catvod.spider.Jable;
-import com.github.catvod.spider.JavDb;
-import com.github.catvod.spider.JustLive;
-import com.github.catvod.spider.MGTV;
-import com.github.catvod.spider.MiMei;
-import com.github.catvod.spider.NCat;
-import com.github.catvod.spider.QxiTv;
-import com.github.catvod.spider.ROU223;
-import com.github.catvod.spider.RouVideo;
-import com.github.catvod.spider.TvDy;
-import com.github.catvod.spider.W55Movie;
-import com.github.catvod.spider.WWRR;
-import com.github.catvod.spider.Wogg;
-import com.github.catvod.spider.XMVideo;
-import com.github.catvod.spider.XVideos;
-import com.github.catvod.spider.YingTan;
-import com.github.catvod.spider.Zhaozy;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -77,7 +46,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new RouVideo();
+            spider = new J91();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -103,7 +72,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("1", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("中文", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
