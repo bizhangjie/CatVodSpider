@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public class XVideos extends Spider {
 
-    private static final String siteUrl = "https://cn.xvideos2.uk";
+    private static final String siteUrl = "https://xvss.cc";
     private static final String cateUrl = siteUrl + "/best/";
     private static final String detailUrl = siteUrl;
     private static final String searchUrl = siteUrl + "/?k=";

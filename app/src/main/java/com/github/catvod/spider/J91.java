@@ -19,7 +19,7 @@ import java.util.Locale;
 
 public class J91 extends Spider {
 
-    private static final String siteUrl = "https://pta.9a07g.com";
+    private static final String siteUrl = "https://156c1s.jiuse9928.xyz";
     private static final String cateUrl = siteUrl + "/video/category/";
     private static final String detailUrl = siteUrl + "/video/view/";
     private static final String searchUrl = siteUrl + "/search?keywords=";
