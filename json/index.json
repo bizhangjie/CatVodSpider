@@ -158,27 +158,6 @@
       "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
     },
     {
-      "key": "drpy_js_亿珍",
-      "name": "意看",
-      "type": 3,
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/奇珍异兽.js"
-    },
-    {
-      "key": "drpy_js_优看",
-      "name": "优看",
-      "type": 3,
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/优酷.js"
-    },
-    {
-      "key": "drpy_js_云看",
-      "name": "云看",
-      "type": 3,
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
-      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/腾云驾雾.js"
-    },
-    {
       "key": "yizhi",
       "name": "18请换乘（index.json换成index18.json即可）",
       "playerType": 0,
