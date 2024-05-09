@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new XVideos();
+            spider = new J91();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("中文", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("latest", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -81,7 +81,7 @@ public class MainActivity extends Activity {
 
     public void detailContent() {
         try {
-            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("282642")));
+            Logger.t("detailContent").d(spider.detailContent(Arrays.asList("ce11ee5c33035c2c9db0")));
         } catch (Throwable e) {
             e.printStackTrace();
         }
