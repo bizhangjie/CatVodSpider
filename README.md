@@ -29,6 +29,13 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | YingTan   | 视频     | csp_YingTan   | 🟢       |
 | NCat      | 视频     | csp_NCat      | 🟢       |
 
+
+
+## 机器人
+```shell
+https://t.me/liveddjkbot
+```
+
 > jar脚本 (上面状态不稳定哦)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
