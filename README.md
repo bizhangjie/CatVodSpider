@@ -40,7 +40,7 @@ https://t.me/liveddjkbot
 /pwd 888
 ```
 
-> jar脚本 (上面状态不稳定哦)
+## jar脚本 (上面状态不稳定哦)
 ```shell
 https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
 ```
