@@ -35,6 +35,10 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 ```shell
 https://t.me/liveddjkbot
 ```
+> 授权命令
+```shell
+/pwd 888
+```
 
 > jar脚本 (上面状态不稳定哦)
 ```shell
