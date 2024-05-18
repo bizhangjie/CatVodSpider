@@ -36,14 +36,6 @@
       "filterable": 1
     },
     {
-      "key": "YingTan",
-      "name": "\uD83D\uDCFD\uFE0F 影探 | 影视",
-      "type": 3,
-      "api": "csp_YingTan",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
       "key": "QxiTv",
       "name": "\uD83E\uDD70 7喜 | 影视",
       "type": 3,
