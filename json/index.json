@@ -74,7 +74,7 @@
     {
       "key": "豪华资源",
       "name": "👉豪华|资源",
-      "type": 3,
+      "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
