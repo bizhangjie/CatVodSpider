@@ -46,7 +46,7 @@
     {
       "key": "卧龙资源",
       "name": "👉卧龙|资源",
-      "type": 1,
+      "type": 3,
       "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
@@ -60,7 +60,7 @@
     {
       "key": "极速资源",
       "name": "👉极速|资源",
-      "type": 1,
+      "type": 3,
       "api": "https://jszyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
@@ -74,7 +74,7 @@
     {
       "key": "豪华资源",
       "name": "👉豪华|资源",
-      "type": 1,
+      "type": 3,
       "api": "https://hhzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
