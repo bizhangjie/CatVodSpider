@@ -29,7 +29,10 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | YingTan   | 视频     | csp_YingTan   | 🟢       |
 | NCat      | 视频     | csp_NCat      | 🟢       |
 
-
+## 吃瓜频道
+```shell
+https://t.me/livecgchannle
+```
 
 ## 机器人
 ```shell
