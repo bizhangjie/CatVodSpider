@@ -10,24 +10,25 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 > 🟠 可能失效
 > ❌ 无法使用
 
-| **站点**    | **类别** | **调用名称**      | **状态** |
-|-----------|--------|---------------| -------- |
-| 91        | 视频     | csp_J91       | 🟢       |
-| 51吃瓜      | 吃瓜     | csp_Cg51      | 🟢       |
-| Jabel     | 教学     | csp_Jable     | 🟢       |
-| 7xiTv     | 视频     | csp_QxiTv     | 🟢       |
-| Ikanbot   | 视频     | csp_Ikanbot   | 🟢       |
-| W55Movie  | 视频     | csp_W55Movie  | 🟢       |
-| Douban    | 仅推荐    | csp_Douban    | 🟢       |
-| CaoLiu    | 视频     | csp_CaoLiu    | 🟢       |
-| MiMei     | 视频     | csp_MiMei     | 🟢       |
-| XVideos   | 视频     | csp_XVideos   | 🟢       |
+| **站点**   | **类别** | **调用名称**      | **状态** |
+|----------|--------|---------------| -------- |
+| 91       | 视频     | csp_J91       | 🟢       |
+| 51吃瓜     | 吃瓜     | csp_Cg51      | 🟢       |
+| Jabel    | 教学     | csp_Jable     | 🟢       |
+| 7xiTv    | 视频     | csp_QxiTv     | 🟢       |
+| Ikanbot  | 视频     | csp_Ikanbot   | 🟢       |
+| W55Movie | 视频     | csp_W55Movie  | 🟢       |
+| Douban   | 仅推荐    | csp_Douban    | 🟢       |
+| CaoLiu   | 视频     | csp_CaoLiu    | 🟢       |
+| MiMei    | 视频     | csp_MiMei     | 🟢       |
+| XVideos  | 视频     | csp_XVideos   | 🟢       |
 | DaGongRen | 视频     | csp_DaGongRen | 🟢       |
-| HkTv      | 视频     | csp_HkTv      | 🟢       |
-| XMVideo   | 视频     | csp_XMVideo   | 🟢       |
-| WWRR      | 视频     | csp_WWRR      | 🟢       |
-| YingTan   | 视频     | csp_YingTan   | 🟢       |
-| NCat      | 视频     | csp_NCat      | 🟢       |
+| HkTv     | 视频     | csp_HkTv      | 🟢       |
+| XMVideo  | 视频     | csp_XMVideo   | 🟢       |
+| WWRR     | 视频     | csp_WWRR      | 🟢       |
+| YingTan  | 视频     | csp_YingTan   | 🟢       |
+| NCat     | 视频     | csp_NCat      | 🟢       |
+| ...      | 视频     | ...           | 🟢       |
 
 ## 吃瓜频道
 ```shell
