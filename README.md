@@ -6,6 +6,20 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 
 ## 总览 (觉得好用就点个Star吧)
 
+## 吃瓜频道
+```shell
+https://t.me/livecgchannle
+```
+
+## 机器人
+```shell
+https://t.me/liveddjkbot
+```
+> 授权命令
+```shell
+/pwd 888
+```
+
 > 🟢 状态正常
 > 🟠 可能失效
 > ❌ 无法使用
@@ -30,19 +44,6 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 | NCat     | 视频     | csp_NCat      | 🟢       |
 | ...      | 视频     | ...           | 🟢       |
 
-## 吃瓜频道
-```shell
-https://t.me/livecgchannle
-```
-
-## 机器人
-```shell
-https://t.me/liveddjkbot
-```
-> 授权命令
-```shell
-/pwd 888
-```
 
 ## jar脚本 (上面状态不稳定哦)
 ```shell
