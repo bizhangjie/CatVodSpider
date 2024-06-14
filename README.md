@@ -4,7 +4,7 @@ https://github.com/CatVodTVOfficial/CatVodTVSpider
 
 ## 总览 (觉得好用就点个Star吧)
 
-## 吃瓜频道 实时更新
+## 吃瓜频道  实时更新
 ```shell
 https://t.me/livecgchannle
 ```
