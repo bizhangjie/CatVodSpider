@@ -27,7 +27,7 @@ import java.util.regex.Pattern;
 
 public class Cg51 extends Spider {
 
-    private static final String siteUrl = "https://h25dz1.efe14f2ce.org";
+    private static final String siteUrl = "https://h25dz1.fyiltkhy.com";
     private static final String cateUrl = siteUrl + "/category/";
     private static final String detailUrl = siteUrl + "/archives/";
     private static final String searchUrl = siteUrl + "/search?keywords=";

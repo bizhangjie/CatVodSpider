@@ -28,7 +28,8 @@ import java.util.regex.Pattern;
 
 public class W55Movie extends Spider {
 
-    private static final String siteUrl = "https://55flix.com";
+//    private static final String siteUrl = "https://55flix.com";
+    private static final String siteUrl = "https://www.tmaztdu.wiki";
     private static final String cateUrl = siteUrl + "/index.php/api/vod";
     private static final String detailUrl = siteUrl + "/voddetail/";
     private static final String playUrl = siteUrl + "/vodplay/";
