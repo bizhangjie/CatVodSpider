@@ -2,6 +2,11 @@
 ### Based on CatVod
 https://github.com/CatVodTVOfficial/CatVodTVSpider
 
+## 广子（正经大额流量卡）
+```
+https://ym.ksjhaoka.com/?s=qaaJsQHd289860
+```
+
 ## 总览 (觉得好用就点个Star吧)
 
 ## 吃瓜频道 实时更新
